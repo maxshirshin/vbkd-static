@@ -22,7 +22,8 @@ import {
 import type { Plugins } from "@cloudinary/html";
 
 // ─── Cloudinary instance (singleton) ────────────────────────────────────────
-const cld = new Cloudinary({ cloud: { cloudName: "dukt6jxh1" } });
+const cloudName = import.meta.env?.VITE_CLOUDINARY_CLOUD_NAME || "dukt6jxh1";
+const cld = new Cloudinary({ cloud: { cloudName: cloudName } });
 
 // ─── Public types ───────────────────────────────────────────────────────────
 
