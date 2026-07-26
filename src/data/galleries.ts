@@ -1,9 +1,9 @@
 import type { ComponentType } from "react";
 
 // Import gallery components
-import BotanicalWatercolour from "../../content/gallery/BotanicalWatercolour";
-import OilPaintings from "../../content/gallery/OilPaintings";
-import Miniatures from "../../content/gallery/Miniatures";
+import MaximShirshin from "../../content/gallery/MaximShirshin";
+import SueHenon from "../../content/gallery/SueHenon";
+import AudreyReilly from "../../content/gallery/AudreyReilly";
 
 export interface Gallery {
   slug: string;
@@ -13,28 +13,27 @@ export interface Gallery {
   Component: ComponentType;
 }
 
-// Register all galleries here — order determines display order everywhere
+// Register all members here
 export const galleries: Gallery[] = [
   {
-    slug: "botanical-watercolour",
-    title: "Botanical Watercolour",
-    description:
-      "Detailed botanical studies in watercolour on paper and vellum.",
-    Component: BotanicalWatercolour,
+    slug: "maxim-shirshin",
+    title: "Maxim Shirshin",
+    description: "Softwareentwickler und Künstler. Arbeitet mit Aquarellfarben und Farbstiften.",
+    coverImage: "mitglieder/maxim-1",
+    Component: MaximShirshin,
   },
   {
-    slug: "oil-paintings",
-    title: "Oil Paintings",
-    description:
-      "Still life and botanical compositions in oil, inspired by the Dutch Golden Age masters.",
-    coverImage: "gallery/tulip-parakeet",
-    Component: OilPaintings,
+    slug: "sue-henon",
+    title: "Sue Hénon",
+    description: "Botanische Malerei und Illustration. Farbstifte, Graphit, Aquarelle, Öl.",
+    coverImage: "mitglieder/sue-1",
+    Component: SueHenon,
   },
   {
-    slug: "miniatures",
-    title: "Miniature Paintings",
-    description:
-      "Intricate miniature works showcasing precision and delicacy.",
-    Component: Miniatures,
+    slug: "audrey-reilly",
+    title: "Audrey Reilly",
+    description: "Vorstandsvorsitzende des VBKD. Natur und Botanische Kunst.",
+    coverImage: "mitglieder/audrey-1",
+    Component: AudreyReilly,
   },
 ];

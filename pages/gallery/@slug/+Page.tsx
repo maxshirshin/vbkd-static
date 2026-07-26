@@ -12,11 +12,11 @@ function Page() {
     return (
       <section className="py-16 md:py-24">
         <div className="container text-center">
-          <h1 className="mb-4">Gallery Not Found</h1>
+          <h1 className="mb-4">Mitglied nicht gefunden</h1>
           <p style={{ color: "var(--color-text-muted)" }}>
-            This gallery does not exist.{" "}
+            Dieses Mitglied wurde nicht gefunden.{" "}
             <a href="/gallery" style={{ color: "var(--color-accent)" }}>
-              Browse all galleries →
+              Zurück zur Galerie →
             </a>
           </p>
         </div>

@@ -7,13 +7,12 @@ function Page() {
   return (
     <section className="py-16 md:py-24">
       <div className="container">
-        <h1 className="text-center mb-4">Gallery</h1>
+        <h1 className="text-center mb-4">Galerie</h1>
         <p
           className="text-center mb-12 max-w-2xl mx-auto"
           style={{ color: "var(--color-text-muted)" }}
         >
-          Explore collections of Svetlana's work across different media and
-          styles.
+          Unsere Mitglieder und ihre Kunstwerke.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -28,21 +27,21 @@ function Page() {
                   publicId={gallery.coverImage}
                   alt={`${gallery.title} — cover`}
                   width={600}
-                  aspectRatio="4:3"
-                  resize="auto"
-                  gravity="auto"
-                  className="w-full h-full object-cover transition-shadow group-hover:shadow-lg"
+                  aspectRatio="1:1"
+                  resize="fill"
+                  gravity="face"
+                  className="w-full h-full object-cover transition-shadow group-hover:shadow-lg mb-4"
                 />
               ) : (
                 <div
-                  className="aspect-[4/3] mb-4 flex items-center justify-center transition-shadow group-hover:shadow-lg"
+                  className="aspect-square mb-4 flex items-center justify-center transition-shadow group-hover:shadow-lg"
                   style={{ backgroundColor: "var(--color-border-light)" }}
                 >
                   <span
                     className="text-sm"
                     style={{ color: "var(--color-text-light)" }}
                   >
-                    Cover image placeholder
+                    Bild fehlt
                   </span>
                 </div>
               )}
