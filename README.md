@@ -1,6 +1,6 @@
-# Svetlana Lanse — Botanical Artist Website
+# VBKD
 
-Personal portfolio and blog for botanical artist Svetlana Lanse.
+VBKD Static website
 
 ## Development
 
@@ -18,7 +18,7 @@ npm run preview   # preview the production build locally
 
 ## Deployment
 
-Deployed to Netlify. Push to the `main` branch to trigger a production deploy.
+Deployed to Netlify. Push to the `master` branch to trigger a production deploy.
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
