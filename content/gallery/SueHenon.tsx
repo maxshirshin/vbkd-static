@@ -1,19 +1,16 @@
-import { CloudinaryImage } from "@/components/CloudinaryImage";
+import { CDNImage } from "@/components/CDNImage";
 
 export default function SueHenon() {
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <figure>
-          <CloudinaryImage publicId="mitglieder/sue-1" alt="Fritilla" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Fritilla (Fritillaria meleagris) - Schachblume</figcaption>
         </figure>
         <figure>
-          <CloudinaryImage publicId="mitglieder/sue-2" alt="Sonnenhut Gelb I" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Sonnenhut Gelb I (Echinacea)</figcaption>
         </figure>
         <figure>
-          <CloudinaryImage publicId="mitglieder/sue-3" alt="Lupinen II" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Lupinen II (Lupinus)</figcaption>
         </figure>
       </div>

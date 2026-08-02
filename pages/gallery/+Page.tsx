@@ -1,6 +1,6 @@
 export default Page;
 
-import { CloudinaryImage } from "@/components/CloudinaryImage";
+import { CDNImage } from "@/components/CDNImage";
 import { galleries } from "@/data/galleries";
 
 function Page() {
@@ -23,13 +23,9 @@ function Page() {
               className="group block"
             >
               {gallery.coverImage ? (
-                <CloudinaryImage
-                  publicId={gallery.coverImage}
+                <CDNImage
+                  srcPath={gallery.coverImage}
                   alt={`${gallery.title} — cover`}
-                  width={600}
-                  aspectRatio="1:1"
-                  resize="fill"
-                  gravity="face"
                   className="w-full h-full object-cover transition-shadow group-hover:shadow-lg mb-4"
                 />
               ) : (

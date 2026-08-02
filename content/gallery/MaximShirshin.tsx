@@ -1,19 +1,16 @@
-import { CloudinaryImage } from "@/components/CloudinaryImage";
+import { CDNImage } from "@/components/CDNImage";
 
 export default function MaximShirshin() {
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <figure>
-          <CloudinaryImage publicId="mitglieder/maxim-1" alt="Meine Zärtlichkeit" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Meine Zärtlichkeit</figcaption>
         </figure>
         <figure>
-          <CloudinaryImage publicId="mitglieder/maxim-2" alt="Kornblumen" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Kornblumen</figcaption>
         </figure>
         <figure>
-          <CloudinaryImage publicId="mitglieder/maxim-3" alt="Sieben Oliven aus Malta" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Sieben Oliven aus Malta</figcaption>
         </figure>
       </div>

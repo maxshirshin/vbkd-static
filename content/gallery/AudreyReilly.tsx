@@ -1,19 +1,16 @@
-import { CloudinaryImage } from "@/components/CloudinaryImage";
+import { CDNImage } from "@/components/CDNImage";
 
 export default function AudreyReilly() {
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <figure>
-          <CloudinaryImage publicId="mitglieder/audrey-1" alt="Asiatische Apfelbirne" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Asiatische Apfelbirne (Pyrus pyrifolia)</figcaption>
         </figure>
         <figure>
-          <CloudinaryImage publicId="mitglieder/audrey-2" alt="Beef tomato" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Beef tomato (Solanum lycopersicum)</figcaption>
         </figure>
         <figure>
-          <CloudinaryImage publicId="mitglieder/audrey-3" alt="Kohlrabi" aspectRatio="1:1" />
           <figcaption className="text-sm mt-2 text-center text-muted">Kohlrabi (Brassica oleracea)</figcaption>
         </figure>
       </div>

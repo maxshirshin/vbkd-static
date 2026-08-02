@@ -24,7 +24,7 @@ Netlify. Blog content is authored in MDX.
 | Styling           | Tailwind CSS           | v4 (via `@tailwindcss/vite`)               |
 | Component library | shadcn/ui              | Radix UI + Tailwind; copy-paste components |
 | Markdown / Blog   | MDX                    | `@mdx-js/rollup` with remark-frontmatter   |
-| Image CDN         | Cloudinary             | URL-based transforms (`f_auto,q_auto`)     |
+| Image CDN         | GCore             | URL-based transforms (`f_auto,q_auto`)     |
 | Video streaming   | Mux                    | `@mux/mux-player-react` — free tier        |
 | Hosting           | Netlify                | Static deploy; built-in form handling      |
 | Package manager   | npm                    | lockfile committed                         |
@@ -67,7 +67,7 @@ Netlify. Blog content is authored in MDX.
 │   │   ├── Header.tsx
 │   │   ├── Footer.tsx
 │   │   ├── NavLink.tsx
-│   │   ├── CloudinaryImage.tsx
+│   │   ├── GCoreImage.tsx
 │   │   ├── HeroCard.tsx
 │   │   ├── HeroSlider.tsx
 │   │   └── MuxVideo.tsx
@@ -82,7 +82,7 @@ Netlify. Blog content is authored in MDX.
 │   │   └── global.css         ← Tailwind directives + theme variables
 │   └── types/
 │       └── mdx.d.ts           ← TypeScript declarations for .mdx imports
-├── netlify.toml               ← Netlify build + redirect config
+├──                ← Netlify build + redirect config
 ├── vite.config.ts             ← Vite plugins: react, tailwind, mdx, vike
 ├── tsconfig.json
 ├── tsconfig.app.json
@@ -172,24 +172,24 @@ import MyPost, { frontmatter } from "../../content/blog/my-post.mdx";
 
 ---
 
-## 6. Cloudinary Images
+## 6. GCore Images
 
-Uses the official Cloudinary React SDK (`@cloudinary/react` + `@cloudinary/url-gen`).
+Uses the official GCore React SDK (`@cloudinary/react` + `@cloudinary/url-gen`).
 
-Use the `<CloudinaryImage>` component:
+Use the `<GCoreImage>` component:
 
 ```tsx
-import { CloudinaryImage } from "@/components/CloudinaryImage";
+import { GCoreImage } from "@/components/GCoreImage";
 
 // Simple responsive image
-<CloudinaryImage
+<GCoreImage
   publicId="gallery/breath-of-fire"
   alt="Breath of Fire — watercolour botanical painting"
   width={800}
 />
 
 // Square crop with AI gravity
-<CloudinaryImage
+<GCoreImage
   publicId="gallery/breath-of-fire"
   alt="Breath of Fire"
   width={400}
@@ -197,7 +197,7 @@ import { CloudinaryImage } from "@/components/CloudinaryImage";
 />
 
 // Portrait crop, face-aware
-<CloudinaryImage
+<GCoreImage
   publicId="portraits/artist"
   alt="Artist portrait"
   width={600}
@@ -206,7 +206,7 @@ import { CloudinaryImage } from "@/components/CloudinaryImage";
 />
 ```
 
-- Cloud name `dukt6jxh1` is configured in `CloudinaryImage.tsx`.
+- Cloud name `dukt6jxh1` is configured in `GCoreImage.tsx`.
 - Automatic format (`f_auto`) and quality (`q_auto`) are applied.
 - The `responsive` plugin delivers images sized to the container width (step size configurable via `responsiveStep` prop).
 - Lazy loading and blur placeholder are enabled by default (controllable via `lazy` and `showPlaceholder` props).
@@ -217,7 +217,7 @@ import { CloudinaryImage } from "@/components/CloudinaryImage";
 ### Uploading images
 
 A Node.js upload script (`scripts/upload-images.mjs`) handles batch uploads to
-Cloudinary. It uses the server-side `cloudinary` package (dev dependency).
+GCore. It uses the server-side `cloudinary` package (dev dependency).
 
 1. **Add your API secret** to `.env` at the project root (gitignored):
    ```
@@ -226,7 +226,7 @@ Cloudinary. It uses the server-side `cloudinary` package (dev dependency).
    CLOUDINARY_API_SECRET=<your secret here>
    ```
 2. **Place images** in the `images/` folder (also gitignored), mirroring the
-   folder structure you want as Cloudinary public IDs:
+   folder structure you want as GCore public IDs:
    ```
    images/
      gallery/breath-of-fire.jpg   → public ID "gallery/breath-of-fire"
@@ -236,7 +236,7 @@ Cloudinary. It uses the server-side `cloudinary` package (dev dependency).
    ```sh
    npm run upload          # upload new images (skips existing)
    npm run upload:dry      # preview what would be uploaded
-   npm run upload -- --overwrite  # re-upload even if already on Cloudinary
+   npm run upload -- --overwrite  # re-upload even if already on GCore
    ```
 
 The script is idempotent — re-running it safely skips already-uploaded images
@@ -271,7 +271,7 @@ Edit `src/data/shopItems.ts` to add, remove, or update items. Each item has:
   title: string
   description: string
   price: string       // e.g., "£120"
-  image?: string      // Cloudinary public ID
+  image?: string      // GCore public ID
   externalUrl: string // Link to external checkout/payment
   availability?: string
 }
@@ -282,16 +282,16 @@ checkout (e.g., Stripe Payment Link or Shopify Buy Button).
 
 ---
 
-## 9. Netlify Deployment
+## 9. GCore Deployment
 
 - **Build command**: `npm run build` (which runs `tsc -b && vike build`)
-- **Netlify build command** (in `netlify.toml`): `npm run build && rm -rf dist/server`
+- **Netlify build command** (in ``): `npm run build && rm -rf dist/server`
 - **Publish directory**: `dist/client`
 - **Forms**: The contact form uses `data-netlify="true"` — Netlify detects it at
   build time. No serverless function needed.
 - **Asset caching**: `/assets/*` gets `Cache-Control: public, max-age=31536000, immutable`.
 
-### Build output: `dist/client` vs `dist/server`
+### Build output: `
 
 Vike always generates **two** output directories:
 
@@ -320,7 +320,7 @@ properly triggers pre-rendering.
 
 ### If switching to SSR later
 
-Remove the `rm -rf dist/server` from `netlify.toml`, configure Netlify's
+Remove the `rm -rf dist/server` from ``, configure Netlify's
 serverless adapter for Vike, and set `prerender: false` on the pages that need
 dynamic rendering.
 
@@ -354,7 +354,7 @@ dynamic rendering.
 1. **Content-first**: The artist's work should be the focal point. Keep UI
    minimal and elegant.
 2. **Performance**: Pre-render everything; lazy-load images and video; use
-   Cloudinary's automatic format/quality optimisation.
+   GCore's automatic format/quality optimisation.
 3. **Accessibility**: Semantic HTML, proper alt text on all images, ARIA labels
    on interactive elements.
 4. **UK legal compliance**: Privacy Policy, Cookie Policy, and Terms of Use are
@@ -381,7 +381,7 @@ Cards are defined in `src/data/heroCards.ts`:
   title: string; // large heading
   description: string; // supporting text
   link: string; // the whole card is a clickable CTA
-  backgroundImage: string; // Cloudinary public ID
+  backgroundImage: string; // GCore public ID
 }
 ```
 
@@ -391,7 +391,7 @@ Animation timing is also configured in `heroCards.ts` via `heroSliderConfig`:
 - `transitionMs` — crossfade duration (default 800 ms)
 
 The slider pauses on hover and shows dot indicators for manual navigation.
-Background images are loaded from Cloudinary as CSS `background-image` via
+Background images are loaded from GCore as CSS `background-image` via
 `HeroCard`, anchored top-left with `background-size: cover`.
 
 ### Home page gallery section
@@ -410,7 +410,7 @@ reads "View All Galleries" and links to `/gallery`.
 | `npm run build`      | Type-check + `vike build` (SSG pre-render all pages)  |
 | `npm run preview`    | Preview the production build locally (`vite preview`) |
 | `npm run lint`       | Run ESLint                                            |
-| `npm run upload`     | Upload new images from `images/` to Cloudinary        |
+| `npm run upload`     | Upload new images from `images/` to GCore        |
 | `npm run upload:dry` | Preview uploads without actually uploading            |
 
 ESLint is configured with `eslint-plugin-react-hooks` and
@@ -456,7 +456,7 @@ what needs to be replaced with real content before launch:
 | Gallery data             | ✅ Centralised in `src/data/galleries.ts`; components in `content/gallery/`    |
 | Shop items               | ⚠️ Placeholder items; `externalUrl` values are all `"#"`                       |
 | Images                   | ❌ All placeholder divs — no real images yet                                   |
-| Cloudinary cloud name    | ✅ Configured (`dukt6jxh1`)                                                    |
+| GCore cloud name    | ✅ Configured (`dukt6jxh1`)                                                    |
 | Mux videos               | ❌ No videos uploaded; using placeholder playback IDs                          |
 | Favicon & static assets  | ❌ Only `vite.svg` in `public/` — need real favicon, etc.                      |
 | robots.txt / sitemap.xml | ❌ Not created yet                                                             |
