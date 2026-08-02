@@ -9,13 +9,11 @@ function Page() {
       </p>
 
       <form
-        name="contact"
+        action="mailto:info@verein-botanischekunst.de"
         method="POST"
-        data-netlify="true"
+        encType="text/plain"
         className="space-y-6"
       >
-        <input type="hidden" name="form-name" value="contact" />
-
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">
             Name
