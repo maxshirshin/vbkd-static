@@ -26,7 +26,7 @@ function Page() {
                 <CDNImage
                   srcPath={gallery.coverImage}
                   alt={`${gallery.title} — cover`}
-                  className="w-full h-full object-cover transition-shadow group-hover:shadow-lg mb-4"
+                  className="w-full aspect-square object-cover transition-shadow group-hover:shadow-lg mb-4"
                 />
               ) : (
                 <div

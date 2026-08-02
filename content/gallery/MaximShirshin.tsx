@@ -1,4 +1,3 @@
-import { CDNImage } from "@/components/CDNImage";
 
 export default function MaximShirshin() {
   return (
