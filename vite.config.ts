@@ -10,10 +10,7 @@ import vike from 'vike/plugin'
 export default defineConfig({
   plugins: [
     mdx({
-      remarkPlugins: [
-        remarkFrontmatter,
-        [remarkMdxFrontmatter, { name: 'frontmatter' }],
-      ],
+      remarkPlugins: [remarkFrontmatter, [remarkMdxFrontmatter, { name: 'frontmatter' }]],
     }),
     react(),
     tailwindcss(),

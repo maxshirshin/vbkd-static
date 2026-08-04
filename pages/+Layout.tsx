@@ -1,1 +1,1 @@
-export { Layout } from "../src/layouts/RootLayout";
+export { Layout } from '../src/layouts/RootLayout'

@@ -1,15 +1,17 @@
-export default Page;
+export default Page
 
-import { Section } from "@/components/ui/Section";
-import { Container } from "@/components/ui/Container";
-import { Heading } from "@/components/ui/Heading";
-import { Button } from "@/components/ui/Button";
+import { Section } from '@/components/ui/Section'
+import { Container } from '@/components/ui/Container'
+import { Heading } from '@/components/ui/Heading'
+import { Button } from '@/components/ui/Button'
 
 function Page() {
   return (
     <Section>
       <Container size="sm">
-        <Heading as="h1" className="text-center">Kontakt</Heading>
+        <Heading as="h1" className="text-center">
+          Kontakt
+        </Heading>
         <p className="text-center mb-12 text-text-muted">
           Haben Sie Fragen? Wir freuen uns über Ihre Nachricht.
         </p>
@@ -68,7 +70,9 @@ function Page() {
               className="mt-1 h-4 w-4 rounded border-border text-primary focus:ring-primary"
             />
             <label htmlFor="gdpr" className="text-sm text-text-muted cursor-pointer">
-              Ich bin damit einverstanden, dass diese Daten zum Zweck der Kontaktaufnahme gespeichert und verarbeitet werden. Mir ist bekannt, dass ich meine Einwilligung jederzeit widerrufen kann.*
+              Ich bin damit einverstanden, dass diese Daten zum Zweck der Kontaktaufnahme
+              gespeichert und verarbeitet werden. Mir ist bekannt, dass ich meine Einwilligung
+              jederzeit widerrufen kann.*
             </label>
           </div>
 
@@ -78,5 +82,5 @@ function Page() {
         </form>
       </Container>
     </Section>
-  );
+  )
 }

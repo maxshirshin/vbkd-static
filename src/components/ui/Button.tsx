@@ -1,14 +1,14 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  asChild?: boolean;
+  asChild?: boolean
 }
 
-export function Button({ children, className = "", ...props }: ButtonProps) {
+export function Button({ children, className = '', ...props }: ButtonProps) {
   return (
-    <button 
-      className={`inline-block px-8 py-3 text-sm font-semibold uppercase tracking-widest transition-colors bg-primary text-surface hover:bg-primary-dark ${className}`} 
+    <button
+      className={`inline-block px-8 py-3 text-sm font-semibold uppercase tracking-widest transition-colors bg-primary text-surface hover:bg-primary-dark ${className}`}
       {...props}
     >
       {children}
     </button>
-  );
+  )
 }

@@ -24,7 +24,7 @@ Netlify. Blog content is authored in MDX.
 | Styling           | Tailwind CSS           | v4 (via `@tailwindcss/vite`)               |
 | Component library | shadcn/ui              | Radix UI + Tailwind; copy-paste components |
 | Markdown / Blog   | MDX                    | `@mdx-js/rollup` with remark-frontmatter   |
-| Image CDN         | GCore             | URL-based transforms (`f_auto,q_auto`)     |
+| Image CDN         | GCore                  | URL-based transforms (`f_auto,q_auto`)     |
 | Video streaming   | Mux                    | `@mux/mux-player-react` — free tier        |
 | Hosting           | Netlify                | Static deploy; built-in form handling      |
 | Package manager   | npm                    | lockfile committed                         |
@@ -126,10 +126,10 @@ Create a new `.mdx` file in `content/blog/` with YAML frontmatter:
 
 ```mdx
 ---
-title: "Post Title"
+title: 'Post Title'
 slug: my-post-slug
-date: "2026-03-01"
-excerpt: "A short description for the blog index."
+date: '2026-03-01'
+excerpt: 'A short description for the blog index.'
 lang: en # "en" (default) or "ru" for Russian posts
 ---
 
@@ -158,7 +158,7 @@ file must be kept in sync if new frontmatter fields are added.
 Import pattern:
 
 ```ts
-import MyPost, { frontmatter } from "../../content/blog/my-post.mdx";
+import MyPost, { frontmatter } from '../../content/blog/my-post.mdx'
 // frontmatter.title, frontmatter.slug, etc.
 // MyPost is the React component (default export)
 ```
@@ -249,9 +249,9 @@ unless `--overwrite` is passed.
 Use the `<MuxVideo>` component:
 
 ```tsx
-import { MuxVideo } from "@/components/MuxVideo";
+import { MuxVideo } from '@/components/MuxVideo'
 
-<MuxVideo playbackId="YOUR_MUX_PLAYBACK_ID" title="Studio tour video" />;
+;<MuxVideo playbackId="YOUR_MUX_PLAYBACK_ID" title="Studio tour video" />
 ```
 
 - **TODO**: Upload videos to Mux and use real playback IDs.
@@ -377,11 +377,11 @@ Cards are defined in `src/data/heroCards.ts`:
 
 ```ts
 {
-  id: string; // unique key
-  title: string; // large heading
-  description: string; // supporting text
-  link: string; // the whole card is a clickable CTA
-  backgroundImage: string; // GCore public ID
+  id: string // unique key
+  title: string // large heading
+  description: string // supporting text
+  link: string // the whole card is a clickable CTA
+  backgroundImage: string // GCore public ID
 }
 ```
 
@@ -410,7 +410,7 @@ reads "View All Galleries" and links to `/gallery`.
 | `npm run build`      | Type-check + `vike build` (SSG pre-render all pages)  |
 | `npm run preview`    | Preview the production build locally (`vite preview`) |
 | `npm run lint`       | Run ESLint                                            |
-| `npm run upload`     | Upload new images from `images/` to GCore        |
+| `npm run upload`     | Upload new images from `images/` to GCore             |
 | `npm run upload:dry` | Preview uploads without actually uploading            |
 
 ESLint is configured with `eslint-plugin-react-hooks` and
@@ -456,7 +456,7 @@ what needs to be replaced with real content before launch:
 | Gallery data             | ✅ Centralised in `src/data/galleries.ts`; components in `content/gallery/`    |
 | Shop items               | ⚠️ Placeholder items; `externalUrl` values are all `"#"`                       |
 | Images                   | ❌ All placeholder divs — no real images yet                                   |
-| GCore cloud name    | ✅ Configured (`dukt6jxh1`)                                                    |
+| GCore cloud name         | ✅ Configured (`dukt6jxh1`)                                                    |
 | Mux videos               | ❌ No videos uploaded; using placeholder playback IDs                          |
 | Favicon & static assets  | ❌ Only `vite.svg` in `public/` — need real favicon, etc.                      |
 | robots.txt / sitemap.xml | ❌ Not created yet                                                             |

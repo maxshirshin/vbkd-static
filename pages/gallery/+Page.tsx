@@ -1,16 +1,18 @@
-export default Page;
+export default Page
 
-import { Section } from "@/components/ui/Section";
-import { Container } from "@/components/ui/Container";
-import { Heading } from "@/components/ui/Heading";
-import { GalleryCard } from "@/components/ui/GalleryCard";
-import { galleries } from "@/data/galleries";
+import { Section } from '@/components/ui/Section'
+import { Container } from '@/components/ui/Container'
+import { Heading } from '@/components/ui/Heading'
+import { GalleryCard } from '@/components/ui/GalleryCard'
+import { galleries } from '@/data/galleries'
 
 function Page() {
   return (
     <Section>
       <Container>
-        <Heading as="h1" className="text-center mb-4">Galerie</Heading>
+        <Heading as="h1" className="text-center mb-4">
+          Galerie
+        </Heading>
         <p className="text-center mb-12 max-w-2xl mx-auto text-text-muted">
           Unsere Mitglieder und ihre Kunstwerke.
         </p>
@@ -28,5 +30,5 @@ function Page() {
         </div>
       </Container>
     </Section>
-  );
+  )
 }

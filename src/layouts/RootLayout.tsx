@@ -1,10 +1,10 @@
-import "@/styles/global.css";
+import '@/styles/global.css'
 
-export { RootLayout as Layout };
+export { RootLayout as Layout }
 
-import { type ReactNode } from "react";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { type ReactNode } from 'react'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -13,5 +13,5 @@ function RootLayout({ children }: { children: ReactNode }) {
       <main className="flex flex-col items-center justify-items-start flex-1">{children}</main>
       <Footer />
     </div>
-  );
+  )
 }
