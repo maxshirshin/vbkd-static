@@ -3,7 +3,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border-light py-12 bg-surface-muted">
-      <div className="container mx-auto px-6">
+      <div className="container max-w-[var(--container-max)] mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
@@ -23,7 +23,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-text-muted flex flex-col">
               <li><a href="/about" className="hover:text-primary transition-colors">Über uns</a></li>
               <li><a href="/mitgliedschaft" className="hover:text-primary transition-colors">Mitgliedschaft</a></li>
-              <li><a href="https://verein-botanischekunst.de/wp-content/uploads/go-x/u/da8f6f35-2f5a-4ab9-a1e9-11a83c6a7330/Satzung-VBKD.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Satzung</a></li>
+              <li><a href="/Satzung-VBKD.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Satzung</a></li>
             </ul>
           </div>
 
