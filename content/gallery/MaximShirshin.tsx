@@ -30,10 +30,8 @@ export default function MaximShirshin() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p
-                    dangerouslySetInnerHTML={{ __html: `Rote Papageitulpe, Tulipa x gesneriana` }}
-                  />
-                  <p dangerouslySetInnerHTML={{ __html: `"Meine Zärtlichkeit"` }} />
+                  <p>Rote Papageitulpe, Tulipa x gesneriana</p>
+                  <p>"Meine Zärtlichkeit"</p>
                 </Prose>
               </Col>
 
@@ -47,8 +45,8 @@ export default function MaximShirshin() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p dangerouslySetInnerHTML={{ __html: `Centaurea cyanus` }} />
-                  <p dangerouslySetInnerHTML={{ __html: `Kornblumen` }} />
+                  <p>Centaurea cyanus</p>
+                  <p>Kornblumen</p>
                 </Prose>
               </Col>
 
@@ -78,46 +76,62 @@ Buntstifte auf Papier
             </MultiCol>
           </GalleryLightboxWrapper>
           <Prose className="text-center text-sm md:text-sm">
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `Olea europaea
-Buntstifte auf Papier
-`,
-              }}
-            />
-            <p dangerouslySetInnerHTML={{ __html: `Sieben Oliven aus Malta` }} />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `<strong>Maxim Shirshin ist Softwareentwickler und Künstler. Er versucht, die Natur in verschiedenen Formen und Gestalten mit künstlerischen Mitteln zu erfassen und ihre Pracht sowie ihre Unvollkommenheiten gleichermaßen darzustellen.</strong>`,
-              }}
-            />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `<i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">Ich komme ursprünglich aus Moskau. An der Universität studierte ich Mathematik und Informatik und bin seit 2001 als Softwareentwickler tätig. Ich bin ein großer Fan meines IT-Berufs und habe an großen und spannenden Projekten für Unternehmen wie Yandex, Zalando und Shopify gearbeitet. 2013 zog ich nach Berlin, Deutschland und begann 2016 meine ersten Hobby-Experimente mit naturwissenschaftlicher Malerei. Jetzt suche ich die perfekte Balance zwischen meiner Karriere im IT-Bereich und den Herausforderungen der botanischen Kunst.</i>`,
-              }}
-            />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `Maxim arbeitet mit Aquarellfarben und Farbstiften. Er interessiert sich auch für Pigmente, Herstellung der Farben und Archivierungseigenschaften von Kunstmaterialen. In seinen Werken stellt er nicht den Mensch, sondern die Lebewesen rund um uns Menschen in den Fokus.`,
-              }}
-            />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `<i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">Unsere Gesellschaft engagiert sich in der Natur hauptsächlich durch Gewalt und Zerstörung. Die Kunst ist doch in der Lage, die Grausamkeit dieser Beziehung zu lindern, indem sie der Gesellschaft zeigt, dass die Dinge, die wir zerstören, immens schön und einzigartig sind.</i>`,
-              }}
-            />
+            <p>Olea europaea Buntstifte auf Papier</p>
+            <p>Sieben Oliven aus Malta</p>
+            <p>
+              <strong>
+                Maxim Shirshin ist Softwareentwickler und Künstler. Er versucht, die Natur in
+                verschiedenen Formen und Gestalten mit künstlerischen Mitteln zu erfassen und ihre
+                Pracht sowie ihre Unvollkommenheiten gleichermaßen darzustellen.
+              </strong>
+            </p>
+            <p>
+              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
+                Ich komme ursprünglich aus Moskau. An der Universität studierte ich Mathematik und
+                Informatik und bin seit 2001 als Softwareentwickler tätig. Ich bin ein großer Fan
+                meines IT-Berufs und habe an großen und spannenden Projekten für Unternehmen wie
+                Yandex, Zalando und Shopify gearbeitet. 2013 zog ich nach Berlin, Deutschland und
+                begann 2016 meine ersten Hobby-Experimente mit naturwissenschaftlicher Malerei.
+                Jetzt suche ich die perfekte Balance zwischen meiner Karriere im IT-Bereich und den
+                Herausforderungen der botanischen Kunst.
+              </i>
+            </p>
+            <p>
+              Maxim arbeitet mit Aquarellfarben und Farbstiften. Er interessiert sich auch für
+              Pigmente, Herstellung der Farben und Archivierungseigenschaften von Kunstmaterialen.
+              In seinen Werken stellt er nicht den Mensch, sondern die Lebewesen rund um uns
+              Menschen in den Fokus.
+            </p>
+            <p>
+              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
+                Unsere Gesellschaft engagiert sich in der Natur hauptsächlich durch Gewalt und
+                Zerstörung. Die Kunst ist doch in der Lage, die Grausamkeit dieser Beziehung zu
+                lindern, indem sie der Gesellschaft zeigt, dass die Dinge, die wir zerstören, immens
+                schön und einzigartig sind.
+              </i>
+            </p>
           </Prose>
           <Prose className="text-center text-sm md:text-sm">
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `Instagram: <a className="text-primary hover:underline" target="_blank" href="https://instagram.com/max.shirshin">@max.shirshin</a>`,
-              }}
-            />
-            <p
-              dangerouslySetInnerHTML={{
-                __html: `Free E-Book “An Engineer Who Paints”: <a className="text-primary hover:underline" target="_blank" href="https://bit.ly/shirshin-ebook">https://bit.ly/shirshin-ebook</a>`,
-              }}
-            />
+            <p>
+              Instagram:{' '}
+              <a
+                className="text-primary hover:underline"
+                target="_blank"
+                href="https://instagram.com/max.shirshin"
+              >
+                @max.shirshin
+              </a>
+            </p>
+            <p>
+              Free E-Book “An Engineer Who Paints”:{' '}
+              <a
+                className="text-primary hover:underline"
+                target="_blank"
+                href="https://bit.ly/shirshin-ebook"
+              >
+                https://bit.ly/shirshin-ebook
+              </a>
+            </p>
           </Prose>
         </Container>
       </Section>

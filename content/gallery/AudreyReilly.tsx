@@ -30,9 +30,7 @@ export default function AudreyReilly() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p
-                    dangerouslySetInnerHTML={{ __html: `Asiatische Apfelbirne (Pyrus pyrifolia)` }}
-                  />
+                  <p>Asiatische Apfelbirne (Pyrus pyrifolia)</p>
                 </Prose>
               </Col>
 
@@ -46,7 +44,7 @@ export default function AudreyReilly() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p dangerouslySetInnerHTML={{ __html: `Beef tomato (Solanum lycopersicum)` }} />
+                  <p>Beef tomato (Solanum lycopersicum)</p>
                 </Prose>
               </Col>
 
@@ -60,47 +58,59 @@ export default function AudreyReilly() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p dangerouslySetInnerHTML={{ __html: `Kohlrabi (Brassica oleracea)` }} />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `<strong>Audrey Reilly ist in Irland geboren und aufgewachsen. Heute lebt und arbeitet sie in der Wedemark, nördlich von Hannover.</strong>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `<a href="/workshops-in-niedersachsen/"><strong>Workshops von Audrey Reilly</strong></a>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Der künstlerische Weg und der Übergang zur Botanischen Kunst`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `<i>Ich bin in der Seenplatte in den irischen Midlands aufgewachsen und fühlte mich von klein auf zu Tieren und der Natur hingezogen. Nach meinem Kunststudium an der Nordwestküste habe ich einige Jahre in Dublin gearbeitet, bevor ich nach Deutschland zog. So trat ich 2006 der Künstlergruppe Atelier Block 16 bei, die ihre Ateliers in einem umgebauten Fabrikgebäude in Hannovers Nordstadt einrichtete. Meine Arbeit war damals eher figurativ und expressionistisch.</i>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `<i>Als ich 2011 aufs Land zog, wendete ich mich in meiner Malerei mehr und mehr der Natur zu. Mir fiel auf, dass Botanische Kunst in Deutschland so in Vergessenheit geraten war, dass ich sie als zeitgenössische Kunstpraxis gar nicht kannte. Die Begegnung mit einer Botanischen Künstlerin in Irland im Jahr 2018 weckte meine Neugier.</i>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `<i>Botanische Kunst erfüllt für mich alle für mich wichtigen Kriterien: Kunst, Geschichte, Natur, Interesse an Wissenschaft, Biodiversität und Umweltbewusstsein vereinen sich auf einem Blatt. Bis jetzt war es definitiv eine fruchtbare und lohnende Reise.</i>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Im Jahr 2020 schloss Audrey Reilly das Certificate in Botanical Illustration am Royal Botanical Garden Edinburgh mit Auszeichnung ab. Danach wurde sie sofort in den anspruchsvollen Online-Diplomkurs aufgenommen, mit dem sie bis März 2024 beschäftigt sein wird.`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Audrey ist Initiatorin und Vorstandsvorsitzende des Vereins für Botanische Kunst Deutschland (VBKD). Sie ist auch Mitglied der Irish Society of Botanical Art (ISBA), der American Society of Botanical Art (ASBA) und der Association of Botanical Artists (ABA).`,
-                    }}
-                  />
+                  <p>Kohlrabi (Brassica oleracea)</p>
+                  <p>
+                    <strong>
+                      Audrey Reilly ist in Irland geboren und aufgewachsen. Heute lebt und arbeitet
+                      sie in der Wedemark, nördlich von Hannover.
+                    </strong>
+                  </p>
+                  <p>
+                    <a href="/workshops-in-niedersachsen/">
+                      <strong>Workshops von Audrey Reilly</strong>
+                    </a>
+                  </p>
+                  <p>Der künstlerische Weg und der Übergang zur Botanischen Kunst</p>
+                  <p>
+                    <i>
+                      Ich bin in der Seenplatte in den irischen Midlands aufgewachsen und fühlte
+                      mich von klein auf zu Tieren und der Natur hingezogen. Nach meinem
+                      Kunststudium an der Nordwestküste habe ich einige Jahre in Dublin gearbeitet,
+                      bevor ich nach Deutschland zog. So trat ich 2006 der Künstlergruppe Atelier
+                      Block 16 bei, die ihre Ateliers in einem umgebauten Fabrikgebäude in Hannovers
+                      Nordstadt einrichtete. Meine Arbeit war damals eher figurativ und
+                      expressionistisch.
+                    </i>
+                  </p>
+                  <p>
+                    <i>
+                      Als ich 2011 aufs Land zog, wendete ich mich in meiner Malerei mehr und mehr
+                      der Natur zu. Mir fiel auf, dass Botanische Kunst in Deutschland so in
+                      Vergessenheit geraten war, dass ich sie als zeitgenössische Kunstpraxis gar
+                      nicht kannte. Die Begegnung mit einer Botanischen Künstlerin in Irland im Jahr
+                      2018 weckte meine Neugier.
+                    </i>
+                  </p>
+                  <p>
+                    <i>
+                      Botanische Kunst erfüllt für mich alle für mich wichtigen Kriterien: Kunst,
+                      Geschichte, Natur, Interesse an Wissenschaft, Biodiversität und
+                      Umweltbewusstsein vereinen sich auf einem Blatt. Bis jetzt war es definitiv
+                      eine fruchtbare und lohnende Reise.
+                    </i>
+                  </p>
+                  <p>
+                    Im Jahr 2020 schloss Audrey Reilly das Certificate in Botanical Illustration am
+                    Royal Botanical Garden Edinburgh mit Auszeichnung ab. Danach wurde sie sofort in
+                    den anspruchsvollen Online-Diplomkurs aufgenommen, mit dem sie bis März 2024
+                    beschäftigt sein wird.
+                  </p>
+                  <p>
+                    Audrey ist Initiatorin und Vorstandsvorsitzende des Vereins für Botanische Kunst
+                    Deutschland (VBKD). Sie ist auch Mitglied der Irish Society of Botanical Art
+                    (ISBA), der American Society of Botanical Art (ASBA) und der Association of
+                    Botanical Artists (ABA).
+                  </p>
                 </Prose>
               </Col>
 
@@ -114,16 +124,26 @@ export default function AudreyReilly() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Webseite: <a className="text-primary hover:underline" target="_blank" href="https://www.audreyreilly-art.com">www.audreyreilly-art.com</a>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Instagram: <a className="text-primary hover:underline" target="_blank" href="https://instagram.com/audrey.reilly">@audrey.reilly</a>`,
-                    }}
-                  />
+                  <p>
+                    Webseite:{' '}
+                    <a
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      href="https://www.audreyreilly-art.com"
+                    >
+                      www.audreyreilly-art.com
+                    </a>
+                  </p>
+                  <p>
+                    Instagram:{' '}
+                    <a
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      href="https://instagram.com/audrey.reilly"
+                    >
+                      @audrey.reilly
+                    </a>
+                  </p>
                 </Prose>
               </Col>
             </MultiCol>

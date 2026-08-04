@@ -30,7 +30,7 @@ export default function KatjaKatholingBloss() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p dangerouslySetInnerHTML={{ __html: `Too good to go` }} />
+                  <p>Too good to go</p>
                 </Prose>
               </Col>
 
@@ -44,7 +44,7 @@ export default function KatjaKatholingBloss() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p dangerouslySetInnerHTML={{ __html: `Anemone` }} />
+                  <p>Anemone</p>
                 </Prose>
               </Col>
 
@@ -58,32 +58,47 @@ export default function KatjaKatholingBloss() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p dangerouslySetInnerHTML={{ __html: `Nuts all around` }} />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `<strong>Alles begann im Jahr 2008 mit dem spontanem Besuch der Ausstellung “Botanica” im Botanischen Garten in Sydney. Dort begegnete Katja schier unglaublich realistisch und detailliert gezeichneten Pflanzen von botanischen Illustratoren und Künstlern.</strong>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `In Hof an der Saale, ganz im Norden Bayerns geboren und aufgewachsen, war Katja stehts von Blumen umgeben; das Blumengeschäft ihrer Mutter war wohl eine Inspiration, die sie bis heute nicht loslässt. Als gelernte Industriefachwirtin arbeitete Katja sowohl in Deutschland als auch mehr als ein Jahrzehnt in England und Australien. Im Jahr 2015 hat es sie dann in die Heimat zurückgezogen. Erst nach Bayreuth und seit 2019 wohnt sie wieder in ihrer Heimatstadt Hof.`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Ihre Ausbildung in der Botanischen Illustration hat Katja in mehreren Kursen in England, unter anderem bei dem leider bereits verstorbenen Stuart Lafford erhalten. Nach mehreren Fortbildungen wurde sie zur Kunstlehrerin für den Bereich Botanische Illustration - auf Englisch „Botanical Art“ - am Hereford College of Technology berufen.`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Mittlerweile ist Katja unter anderem Vorstandsmitglied in der Society of Botanical Artists (SBA, England), Mitglied der American Society of Botanical Artists (ASBA) sowie im Kunstverein Hof/Saale. Ihre Arbeiten hat sie bereits in mehreren Einzel- und Gemeinschafts-Ausstellungen in England und Deutschland gezeigt. Werke von ihr befinden sich in vielen Ländern in Privatbesitz, unter anderem in England, Australien, Italien und Dubai.`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Katja arbeitet als freischaffende Künstlerin und Dozentin für Botanische Illustration in Deutschland und Österreich. In ihrem Studio in Hof/Oberfranken bietet sie verschiedene Workshops sowie individuelle Intensiv-Einzel-Coachings an. Ihr vorrangiges Ziel ist es, diese einzigartige Art von Kunst in Deutschland wieder publik zu machen und dem Betrachter die wunderbare Welt der Pflanzen mit einem ganz speziellen Blick fürs Detail zu öffnen. Das ist Katjas Ziel, dafür “brennt” sie und hofft, dass sie auch dich begeistern kann.`,
-                    }}
-                  />
+                  <p>Nuts all around</p>
+                  <p>
+                    <strong>
+                      Alles begann im Jahr 2008 mit dem spontanem Besuch der Ausstellung “Botanica”
+                      im Botanischen Garten in Sydney. Dort begegnete Katja schier unglaublich
+                      realistisch und detailliert gezeichneten Pflanzen von botanischen
+                      Illustratoren und Künstlern.
+                    </strong>
+                  </p>
+                  <p>
+                    In Hof an der Saale, ganz im Norden Bayerns geboren und aufgewachsen, war Katja
+                    stehts von Blumen umgeben; das Blumengeschäft ihrer Mutter war wohl eine
+                    Inspiration, die sie bis heute nicht loslässt. Als gelernte Industriefachwirtin
+                    arbeitete Katja sowohl in Deutschland als auch mehr als ein Jahrzehnt in England
+                    und Australien. Im Jahr 2015 hat es sie dann in die Heimat zurückgezogen. Erst
+                    nach Bayreuth und seit 2019 wohnt sie wieder in ihrer Heimatstadt Hof.
+                  </p>
+                  <p>
+                    Ihre Ausbildung in der Botanischen Illustration hat Katja in mehreren Kursen in
+                    England, unter anderem bei dem leider bereits verstorbenen Stuart Lafford
+                    erhalten. Nach mehreren Fortbildungen wurde sie zur Kunstlehrerin für den
+                    Bereich Botanische Illustration - auf Englisch „Botanical Art“ - am Hereford
+                    College of Technology berufen.
+                  </p>
+                  <p>
+                    Mittlerweile ist Katja unter anderem Vorstandsmitglied in der Society of
+                    Botanical Artists (SBA, England), Mitglied der American Society of Botanical
+                    Artists (ASBA) sowie im Kunstverein Hof/Saale. Ihre Arbeiten hat sie bereits in
+                    mehreren Einzel- und Gemeinschafts-Ausstellungen in England und Deutschland
+                    gezeigt. Werke von ihr befinden sich in vielen Ländern in Privatbesitz, unter
+                    anderem in England, Australien, Italien und Dubai.
+                  </p>
+                  <p>
+                    Katja arbeitet als freischaffende Künstlerin und Dozentin für Botanische
+                    Illustration in Deutschland und Österreich. In ihrem Studio in Hof/Oberfranken
+                    bietet sie verschiedene Workshops sowie individuelle Intensiv-Einzel-Coachings
+                    an. Ihr vorrangiges Ziel ist es, diese einzigartige Art von Kunst in Deutschland
+                    wieder publik zu machen und dem Betrachter die wunderbare Welt der Pflanzen mit
+                    einem ganz speziellen Blick fürs Detail zu öffnen. Das ist Katjas Ziel, dafür
+                    “brennt” sie und hofft, dass sie auch dich begeistern kann.
+                  </p>
                 </Prose>
               </Col>
 
@@ -97,16 +112,26 @@ export default function KatjaKatholingBloss() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Website: <a className="text-primary hover:underline" target="_blank" href="https://katjakatholing-bloss.com">https://katjakatholing-bloss.com</a>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Instagram: <a className="text-primary hover:underline" target="_blank" href="https://www.instagram.com/katjakatholingbloss">@katjakatholingbloss</a>`,
-                    }}
-                  />
+                  <p>
+                    Website:{' '}
+                    <a
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      href="https://katjakatholing-bloss.com"
+                    >
+                      https://katjakatholing-bloss.com
+                    </a>
+                  </p>
+                  <p>
+                    Instagram:{' '}
+                    <a
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      href="https://www.instagram.com/katjakatholingbloss"
+                    >
+                      @katjakatholingbloss
+                    </a>
+                  </p>
                 </Prose>
               </Col>
             </MultiCol>

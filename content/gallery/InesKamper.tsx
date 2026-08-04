@@ -54,26 +54,41 @@ export default function InesKamper() {
                   height={900}
                 />
                 <Prose className="text-center text-sm md:text-sm">
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `In ihrer Kindheit ist sie viel in der Natur herumgestromert und interessierte sich schon früh für Blumen, Käfer und andere Insekten. In der Grundschule ist ihr künstlerisches Talent zum ersten mal aufgefallen. Eines ihrer Bilder gewann einen landesweiten Wettbewerb. Ihr Interesse erlosch aber abrupt als sie einer Begabtenklasse für Kunst zugeteilt wurde,<br>die von einer herrischen und kaltherzigen Lehrerin geleitet wurde.`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `<br>Nach ihrer Ausbildung und ihrem Studium zum Ingenieur für Keramik, verbrachte sie einige Zeit im Ausland, in Großbritannien. Zurück in Norddeutschland arbeitete sie dann in der Werbung. Auf ihren vielen Reisen rund um die Welt, entdeckte sie ihre Liebe zur Natur und zur Kunst wieder. Sie nahm Zeichenunterricht und an Workshops für Botanical<br>Illustration teil, unter anderem bei Jessica Sheperd in London und Elaine Searle in Italien. Nach 2 jähriger Ausbildung (Distance Diploma Course) bei der Society of Botanical Artists (SBA) erhielt Ines Kamper ihr Diplom für Botanical Illustration.`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `Instagram: <a className="text-primary hover:underline" target="_blank" href="https://www.instagram.com/ines_kamper2020">@ines_kamper2020</a>`,
-                    }}
-                  />
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: `E-Mail: <a href="mailto:ines_witt@yahoo.de">ines_witt@yahoo.de</a>`,
-                    }}
-                  />
+                  <p>
+                    In ihrer Kindheit ist sie viel in der Natur herumgestromert und interessierte
+                    sich schon früh für Blumen, Käfer und andere Insekten. In der Grundschule ist
+                    ihr künstlerisches Talent zum ersten mal aufgefallen. Eines ihrer Bilder gewann
+                    einen landesweiten Wettbewerb. Ihr Interesse erlosch aber abrupt als sie einer
+                    Begabtenklasse für Kunst zugeteilt wurde,
+                    <br />
+                    die von einer herrischen und kaltherzigen Lehrerin geleitet wurde.
+                  </p>
+                  <p>
+                    <br />
+                    Nach ihrer Ausbildung und ihrem Studium zum Ingenieur für Keramik, verbrachte
+                    sie einige Zeit im Ausland, in Großbritannien. Zurück in Norddeutschland
+                    arbeitete sie dann in der Werbung. Auf ihren vielen Reisen rund um die Welt,
+                    entdeckte sie ihre Liebe zur Natur und zur Kunst wieder. Sie nahm
+                    Zeichenunterricht und an Workshops für Botanical
+                    <br />
+                    Illustration teil, unter anderem bei Jessica Sheperd in London und Elaine Searle
+                    in Italien. Nach 2 jähriger Ausbildung (Distance Diploma Course) bei der Society
+                    of Botanical Artists (SBA) erhielt Ines Kamper ihr Diplom für Botanical
+                    Illustration.
+                  </p>
+                  <p>
+                    Instagram:{' '}
+                    <a
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      href="https://www.instagram.com/ines_kamper2020"
+                    >
+                      @ines_kamper2020
+                    </a>
+                  </p>
+                  <p>
+                    E-Mail: <a href="mailto:ines_witt@yahoo.de">ines_witt@yahoo.de</a>
+                  </p>
                 </Prose>
               </Col>
 
