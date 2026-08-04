@@ -26,8 +26,8 @@ export default function InesKamper() {
                   localFull={'gallery/ines-kamper/image-1-full.jpg'}
                   alt=""
                   title=""
-                  width={1200}
-                  height={900}
+                  width={1500}
+                  height={2000}
                 />
                 <Prose className="text-center text-sm md:text-sm"></Prose>
               </Col>
@@ -38,8 +38,8 @@ export default function InesKamper() {
                   localFull={'gallery/ines-kamper/image-2-full.jpg'}
                   alt=""
                   title=""
-                  width={1200}
-                  height={900}
+                  width={1382}
+                  height={2000}
                 />
                 <Prose className="text-center text-sm md:text-sm"></Prose>
               </Col>
@@ -50,8 +50,8 @@ export default function InesKamper() {
                   localFull={'gallery/ines-kamper/image-3-full.jpg'}
                   alt=""
                   title="In ihrer Kindheit ist sie viel in der Natur herumgestromert und interessierte sich schon früh für Blumen, Käfer und andere Insekten. In der Grundschule ist ihr künstlerisches Talent zum ersten mal aufgefallen. Eines ihrer Bilder gewann einen landesweiten Wettbewerb. Ihr Interesse erlosch aber abrupt als sie einer Begabtenklasse für Kunst zugeteilt wurde,die von einer herrischen und kaltherzigen Lehrerin geleitet wurde. | Nach ihrer Ausbildung und ihrem Studium zum Ingenieur für Keramik, verbrachte sie einige Zeit im Ausland, in Großbritannien. Zurück in Norddeutschland arbeitete sie dann in der Werbung. Auf ihren vielen Reisen rund um die Welt, entdeckte sie ihre Liebe zur Natur und zur Kunst wieder. Sie nahm Zeichenunterricht und an Workshops für BotanicalIllustration teil, unter anderem bei Jessica Sheperd in London und Elaine Searle in Italien. Nach 2 jähriger Ausbildung (Distance Diploma Course) bei der Society of Botanical Artists (SBA) erhielt Ines Kamper ihr Diplom für Botanical Illustration."
-                  width={1200}
-                  height={900}
+                  width={2000}
+                  height={1324}
                 />
                 <Prose className="text-center text-sm md:text-sm">
                   <p>
@@ -98,8 +98,8 @@ export default function InesKamper() {
                   localFull={undefined}
                   alt=""
                   title=""
-                  width={1200}
-                  height={900}
+                  width={446}
+                  height={446}
                 />
                 <Prose className="text-center text-sm md:text-sm"></Prose>
               </Col>

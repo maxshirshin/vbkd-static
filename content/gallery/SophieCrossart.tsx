@@ -26,8 +26,8 @@ export default function SophieCrossart() {
                   localFull={'gallery/sophie-crossart/image-1-full.jpg'}
                   alt=""
                   title=""
-                  width={1200}
-                  height={900}
+                  width={708}
+                  height={1000}
                 />
                 <Prose className="text-center text-sm md:text-sm"></Prose>
               </Col>
@@ -38,8 +38,8 @@ export default function SophieCrossart() {
                   localFull={'gallery/sophie-crossart/image-2-full.jpg'}
                   alt=""
                   title=""
-                  width={1200}
-                  height={900}
+                  width={850}
+                  height={1280}
                 />
                 <Prose className="text-center text-sm md:text-sm"></Prose>
               </Col>
@@ -50,8 +50,8 @@ export default function SophieCrossart() {
                   localFull={'gallery/sophie-crossart/image-3-full.jpg'}
                   alt=""
                   title="Sophie ist eine botanische Künstlerin und Illustratorin, die mit Aquarellfarben auf Papier undPergament malt. | In unserem modernen digitalen Zeitalter ist das Malen der Natur ihre Art, ein Gefühl von Authentizität, Verbundenheit und Gewissheit im Leben zu bewahren. Im Mittelpunkt ihrer Arbeit steht ihre Faszination für komplizierte natürliche Details. Sie beobachtet und isoliert diese sorgfältig in ihre Bilder, um die Erfüllung einzufangen, die wir erfahren, wenn wir auf etwas scheinbar Unbedeutendes stoßen, das sich aber als liebevoll schön herausstellt. | Indem sie die flüchtigen Qualitäten, die sie in der Natur findet, auf Kunstwerke überträgt, möchtetSophie sie zu eine bleibende Erfahrung und Quelle der Vertrautheit und Inspiration machen. Indemsie ihre botanischen Motive gelegentlich mit Gegenständen aus der Naturgeschichte kombiniert,erforscht sie die Beziehung der Menschheit zu den größeren Themen Wandel und Zeit. Ihre eigeneInterpretation von „Memento Mori“ plädiert für die Erfahrung der Schönheit des Lebens statt derAngst für Verlust. Momentan arbeitet Sie an eine Serie der die grandiose Strukturen des Weltraumverbindet mit die Einzigartigkeit der irdische Natur — der Natur als Teil des Alls. | Sophie studierte Kunstgeschichte in den Niederlanden und Deutschland und promovierte inMünchen. Ihre Werke sind geprägt von ihrem akademischen Forschung nach der historischenAbbildung des Alltags und der Natur. Sophie lebt in Heidelberg, Deutschland, und arbeitet sowohlan kommerziellen als auch privaten Aufträgen und Zusammenarbeiten. Ihre Werke werdenweltweit gesammelt.&nbsp;"
-                  width={1200}
-                  height={900}
+                  width={900}
+                  height={1273}
                 />
                 <Prose className="text-center text-sm md:text-sm">
                   <p>

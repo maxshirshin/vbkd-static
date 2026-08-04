@@ -26,8 +26,8 @@ export default function DrSabineLoos() {
                   localFull={'gallery/dr-sabine-loos/image-1-full.jpg'}
                   alt=""
                   title="Aquarell auf Pergament | Orientalische Nieswurz (Helleborus orientalis)"
-                  width={1200}
-                  height={900}
+                  width={1370}
+                  height={2000}
                 />
                 <Prose className="text-center text-sm md:text-sm">
                   <p>Aquarell auf Pergament</p>
@@ -41,8 +41,8 @@ export default function DrSabineLoos() {
                   localFull={'gallery/dr-sabine-loos/image-2-full.jpg'}
                   alt=""
                   title="Efeu (Hedera helix)"
-                  width={1200}
-                  height={900}
+                  width={2000}
+                  height={1946}
                 />
                 <Prose className="text-center text-sm md:text-sm">
                   <p>Efeu (Hedera helix)</p>
@@ -55,8 +55,8 @@ export default function DrSabineLoos() {
                   localFull={'gallery/dr-sabine-loos/image-3-full.jpg'}
                   alt=""
                   title="Alpen-Mannstreu (Eryngium alpinum) | Sabine Loos lebt seit 1995 mit ihrer Familie im idyllischen Rudolstadt an der Saale, einem der Lieblingsorte Friedrich Schillers. Hier fertigt sie in ihrem idyllisch gelegenen Atelier unterhalb der Heidecksburg Botanische Illustrationen und Botanische Kunst. | Ich studierte Biologie an der altehrwürdigen Friedrich-Schiller-Universität in Jena und an der ETH Zürich und promovierte in meinem Hauptfach Mikrobiologie über Sekundärmetaboliten in filamentösen Pilzen. | Mein Nebenfach Botanik faszinierte mich ebenfalls. Besonders die Pharmakologie natürlicher pflanzlicher Sekundärmetabolite zog mich in ihren Bann. Als ich einen Anfängerkurs für Botanische Illustration bei Katja Katholing-Bloss belegte, fühlte es sich an, wie nach Hause zu kommen. Etwas Magisches passierte in mir an diesem Tag und ich wusste, dass Botanische Illustrationen mit meiner Zukunft verbunden sein würden. Botanische Kunst und Illustrationen verbinden meinen Kopf mit meinem Herzen. Es gibt nichts Schöneres für mich, als mit den Beinen zu baumeln und über den Blütenbau eines Doldenblütlers nachzudenken. Mit dem Pinsel in der Hand bin ich glücklich. Ich bin davon überzeugt, dass in jedem Menschen ein Künstler schlummert, den man einfach aufwecken muss. | Nach vielen Stunden des Selbststudiums und Online-Kursen, die mir viel Freude bereiteten, beschloss ich, meine künstlerischen Fähigkeiten weiter zu vertiefen. &nbsp;Seitdem studiere ich Botanische Illustration im Diplomstudiengang am Royal Botanical Garden Edinburgh. Den werde ich 2024 abschließen. Mein Herzensanliegen ist es, die historischen Wurzeln der Botanischen Illustration in Deutschland wieder zu beleben und die Botanische Kunst in Deutschland wieder aufblühen zu lassen. | Herzliche Grüße | Aus dem Botanischen Atelier unter dem Schlosshain | Eure Sabine"
-                  width={1200}
-                  height={900}
+                  width={1153}
+                  height={1537}
                 />
                 <Prose className="text-center text-sm md:text-sm">
                   <p>Alpen-Mannstreu (Eryngium alpinum)</p>
@@ -125,8 +125,8 @@ export default function DrSabineLoos() {
                   localFull={undefined}
                   alt=""
                   title=""
-                  width={1200}
-                  height={900}
+                  width={768}
+                  height={512}
                 />
                 <Prose className="text-center text-sm md:text-sm">
                   <p>
