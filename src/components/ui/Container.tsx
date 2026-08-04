@@ -3,9 +3,10 @@ interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export function Container({ children, className = "", size = "default", ...props }: ContainerProps) {
-  const maxW = size === "sm" ? "max-w-2xl" : size === "md" ? "max-w-3xl" : "";
+  // We ignore the `size` prop here to ensure the main content identically matches 
+  // the Header and Footer boundaries at all breakpoints.
   return (
-    <div className={`container mx-auto px-6 ${maxW} ${className}`} {...props}>
+    <div className={`container mx-auto px-6 max-w-[var(--container-max)] ${className}`} {...props}>
       {children}
     </div>
   );

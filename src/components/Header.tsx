@@ -15,7 +15,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm h-[80px]">
-      <div className="container mx-auto px-6 flex items-center justify-between h-full">
+      <div className="container max-w-[var(--container-max)] mx-auto px-6 flex items-center justify-between h-full">
         {/* Logo / Site Name */}
         <a
           href="/"

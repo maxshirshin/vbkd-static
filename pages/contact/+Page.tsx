@@ -59,6 +59,19 @@ function Page() {
             />
           </div>
 
+          <div className="flex items-start gap-3">
+            <input
+              type="checkbox"
+              id="gdpr"
+              name="gdpr"
+              required
+              className="mt-1 h-4 w-4 rounded border-border text-primary focus:ring-primary"
+            />
+            <label htmlFor="gdpr" className="text-sm text-text-muted cursor-pointer">
+              Ich bin damit einverstanden, dass diese Daten zum Zweck der Kontaktaufnahme gespeichert und verarbeitet werden. Mir ist bekannt, dass ich meine Einwilligung jederzeit widerrufen kann.*
+            </label>
+          </div>
+
           <Button type="submit" className="w-full">
             Nachricht senden
           </Button>

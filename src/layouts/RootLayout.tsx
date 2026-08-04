@@ -10,7 +10,7 @@ function RootLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="flex flex-col items-center justify-items-start flex-1">{children}</main>
       <Footer />
     </div>
   );

@@ -11,7 +11,6 @@ function Page() {
       <Section>
         <Container size="md">
           <Heading as="h1" className="text-center">Startseite</Heading>
-          
           <Prose>
             <p className="font-bold">Willkommen beim Verein für Botanische Kunst Deutschland!</p>
             <p>Wir sind eine Gruppe von pflanzenbegeisterten Künstlern und Illustratoren.</p>
