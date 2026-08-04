@@ -2,6 +2,9 @@ export default Page;
 
 import { usePageContext } from "vike-react/usePageContext";
 import { galleries } from "@/data/galleries";
+import { Section } from "@/components/ui/Section";
+import { Container } from "@/components/ui/Container";
+import { Heading } from "@/components/ui/Heading";
 
 function Page() {
   const { routeParams } = usePageContext();
@@ -10,44 +13,38 @@ function Page() {
 
   if (!gallery) {
     return (
-      <section className="py-16 md:py-24">
-        <div className="container text-center">
-          <h1 className="mb-4">Mitglied nicht gefunden</h1>
-          <p style={{ color: "var(--color-text-muted)" }}>
+      <Section>
+        <Container className="text-center">
+          <Heading as="h1">Mitglied nicht gefunden</Heading>
+          <p className="text-text-muted">
             Dieses Mitglied wurde nicht gefunden.{" "}
-            <a href="/gallery" style={{ color: "var(--color-accent)" }}>
+            <a href="/gallery" className="text-accent hover:text-accent-dark">
               Zurück zur Galerie →
             </a>
           </p>
-        </div>
-      </section>
+        </Container>
+      </Section>
     );
   }
 
   const GalleryContent = gallery.Component;
 
   return (
-    <section className="py-16 md:py-24">
-      <div className="container">
-        <nav
-          className="mb-8 text-sm"
-          style={{ color: "var(--color-text-muted)" }}
-        >
-          <a href="/gallery">Gallery</a>
+    <Section>
+      <Container>
+        <nav className="mb-8 text-sm text-text-muted">
+          <a href="/gallery" className="hover:text-primary">Galerie</a>
           <span className="mx-2">/</span>
-          <span style={{ color: "var(--color-text)" }}>{gallery.title}</span>
+          <span className="text-text">{gallery.title}</span>
         </nav>
 
-        <h1 className="mb-2">{gallery.title}</h1>
-        <p
-          className="mb-12 max-w-2xl"
-          style={{ color: "var(--color-text-muted)" }}
-        >
+        <Heading as="h1">{gallery.title}</Heading>
+        <p className="mb-12 max-w-2xl text-text-muted">
           {gallery.description}
         </p>
 
         <GalleryContent />
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }

@@ -2,84 +2,44 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      className="border-t py-12"
-      style={{
-        borderColor: "var(--color-border-light)",
-        backgroundColor: "var(--color-surface-muted)",
-      }}
-    >
-      <div className="container">
+    <footer className="border-t border-border-light py-12 bg-surface-muted">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3
-              className="text-lg tracking-[0.2em] uppercase mb-3"
-              style={{
-                fontFamily: "var(--font-heading)",
-                color: "var(--color-primary-dark)",
-              }}
-            >
+            <h3 className="text-lg tracking-[0.2em] uppercase mb-3 font-heading text-primary-dark">
               VBKD e.V.
             </h3>
-            <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>
+            <p className="text-sm text-text-muted">
               Verein Botanische Kunst Deutschland
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4
-              className="text-sm font-semibold uppercase tracking-wide mb-3"
-              style={{ color: "var(--color-text)" }}
-            >
+            <h4 className="text-sm font-semibold uppercase tracking-wide mb-3 text-text">
               Links
             </h4>
-            <ul
-              className="space-y-2 text-sm"
-              style={{ color: "var(--color-text-muted)" }}
-            >
-              <li>
-                <a href="/about">Über uns</a>
-              </li>
-              <li>
-                <a href="/mitgliedschaft">Mitgliedschaft</a>
-              </li>
-              <li>
-                <a href="https://verein-botanischekunst.de/wp-content/uploads/go-x/u/da8f6f35-2f5a-4ab9-a1e9-11a83c6a7330/Satzung-VBKD.pdf" target="_blank" rel="noopener noreferrer">Satzung</a>
-              </li>
+            <ul className="space-y-2 text-sm text-text-muted flex flex-col">
+              <li><a href="/about" className="hover:text-primary transition-colors">Über uns</a></li>
+              <li><a href="/mitgliedschaft" className="hover:text-primary transition-colors">Mitgliedschaft</a></li>
+              <li><a href="https://verein-botanischekunst.de/wp-content/uploads/go-x/u/da8f6f35-2f5a-4ab9-a1e9-11a83c6a7330/Satzung-VBKD.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Satzung</a></li>
             </ul>
           </div>
 
           {/* Social & Legal */}
           <div>
-            <h4
-              className="text-sm font-semibold uppercase tracking-wide mb-3"
-              style={{ color: "var(--color-text)" }}
-            >
+            <h4 className="text-sm font-semibold uppercase tracking-wide mb-3 text-text">
               Rechtliches
             </h4>
-            <ul
-              className="space-y-2 text-sm"
-              style={{ color: "var(--color-text-muted)" }}
-            >
-              <li>
-                <a href="/impressum">Impressum</a>
-              </li>
-              <li>
-                <a href="/datenschutz">Datenschutz</a>
-              </li>
+            <ul className="space-y-2 text-sm text-text-muted flex flex-col">
+              <li><a href="/impressum" className="hover:text-primary transition-colors">Impressum</a></li>
+              <li><a href="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</a></li>
             </ul>
           </div>
         </div>
 
-        <div
-          className="mt-10 pt-6 border-t text-center text-xs"
-          style={{
-            borderColor: "var(--color-border)",
-            color: "var(--color-text-light)",
-          }}
-        >
+        <div className="mt-10 pt-6 border-t border-border text-center text-xs text-text-light">
           Urheberrecht © {currentYear} Verein Botanische Kunst Deutschland e.V. Alle Rechte vorbehalten.
         </div>
       </div>

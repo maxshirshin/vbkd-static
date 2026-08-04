@@ -1,14 +1,21 @@
 export default Page;
 
+import { Section } from "@/components/ui/Section";
+import { Container } from "@/components/ui/Container";
+import { Heading } from "@/components/ui/Heading";
+import { Prose } from "@/components/ui/Prose";
+
 function Page() {
   return (
-    <div className="container py-16 max-w-3xl">
-      <h1 className="text-center mb-12">Impressum</h1>
-      <div className="space-y-6">
-        <p>Verein Botanische Kunst Deutschland e.V.</p>
-        <p>Angaben gemäß § 5 TMG</p>
-        <p>Inhalt hier einfügen...</p>
-      </div>
-    </div>
+    <Section>
+      <Container size="md">
+        <Heading as="h1" className="text-center">Impressum</Heading>
+        <Prose>
+          <p>Verein Botanische Kunst Deutschland e.V.</p>
+          <p>Angaben gemäß § 5 TMG</p>
+          <p>Inhalt hier einfügen...</p>
+        </Prose>
+      </Container>
+    </Section>
   );
 }
