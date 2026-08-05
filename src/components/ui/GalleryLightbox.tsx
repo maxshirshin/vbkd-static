@@ -21,12 +21,8 @@ export function GalleryLightboxItem({
   return (
     <Item
       content={
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
-            <img 
-               src={fullUrl} 
-               alt={alt} 
-               style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} 
-            />
+        <div className="flex items-center justify-center w-full h-full">
+          <img src={fullUrl} alt={alt} className="max-w-full max-h-full object-contain" />
         </div>
       }
       original={fullUrl}
