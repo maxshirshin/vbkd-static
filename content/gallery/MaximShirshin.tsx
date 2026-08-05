@@ -1,6 +1,5 @@
 import { Container } from '@/components/ui/Container'
 import { Section } from '@/components/ui/Section'
-import { Heading } from '@/components/ui/Heading'
 import { Prose } from '@/components/ui/Prose'
 import { GalleryLightboxWrapper, GalleryLightboxItem } from '@/components/ui/GalleryLightbox'
 import { MultiCol, Col } from '@/components/ui/Layout'

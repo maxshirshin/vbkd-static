@@ -7,8 +7,6 @@ export function GalleryLightboxItem({
   localFull,
   alt,
   title,
-  width = 1200,
-  height = 900,
 }: {
   localPreview: string
   localFull?: string
@@ -22,10 +20,17 @@ export function GalleryLightboxItem({
 
   return (
     <Item
+      content={
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
+            <img 
+               src={fullUrl} 
+               alt={alt} 
+               style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} 
+            />
+        </div>
+      }
       original={fullUrl}
       thumbnail={`${CDN_URL}/images/${localPreview}`}
-      width={width}
-      height={height}
       alt={alt}
       caption={title}
     >
