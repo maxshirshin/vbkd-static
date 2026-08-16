@@ -71,8 +71,8 @@ const run = async () => {
         const paragraphsHtml = paragraphs.map(p => `        <p>${p}</p>`).join('\n');
         
         const tsxContent = `import React from 'react';
-import { Container } from '@/components/ui/Container';
-import { Section } from '@/components/ui/Section';
+import { Content } from '@/components/ui/Content';
+;
 import { Heading } from '@/components/ui/Heading';
 import { Prose } from '@/components/ui/Prose';
 import { GalleryCard } from '@/components/ui/GalleryCard';
@@ -80,17 +80,14 @@ import { GalleryCard } from '@/components/ui/GalleryCard';
 export default function ${compName}() {
   return (
     <>
-      <Section className="pb-0 pt-32">
-        <Container>
+      <Content>
           <Heading level={1} className="mb-8">{ "${member.title}" }</Heading>
           <Prose>
 ${paragraphsHtml}
           </Prose>
-        </Container>
-      </Section>
+        </Content>
 
-      <Section>
-        <Container>
+      <Content>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             ${localImages.map(img => `
             <GalleryCard 
@@ -99,8 +96,7 @@ ${paragraphsHtml}
               title="" 
             />`).join('')}
           </div>
-        </Container>
-      </Section>
+        </Content>
     </>
   );
 }

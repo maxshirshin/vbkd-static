@@ -11,8 +11,8 @@ for (const file of files) {
   let content = fs.readFileSync(filePath, 'utf8');
 
   // The structural changes visually executed by the user:
-  // 1. Omit the top <Section> <Heading h1> since it's redundant/unnecessary/handled elsewhere.
-  content = content.replace(/<Section className="pb-0 pt-32">\s*<Container>\s*<Heading as="h1" className="mb-0 text-center">\s*\{'[^']+'\}\s*<\/Heading>\s*<\/Container>\s*<\/Section>\s*<Section>/, '<Section>');
+  // 1. Omit the top <Heading h1> since it's redundant/unnecessary/handled elsewhere.
+  content = content.replace(/\s*<Content>\s*<Heading as="h1" className="mb-0 text-center">\s*\{'[^']+'\}\s*<\/Heading>\s*<\/Content>\s*<\/Section>\s*/, '');
   
   // 2. Remove the Heading import if present
   content = content.replace(/import { Heading } from '@\/components\/ui\/Heading'\n/, '');

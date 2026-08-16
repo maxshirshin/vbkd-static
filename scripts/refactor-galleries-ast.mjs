@@ -128,16 +128,14 @@ async function run() {
           trailingTexts.push(...bioParagraphs);
       }
       
-      const tsxContent = `import { Container } from '@/components/ui/Container'
-import { Section } from '@/components/ui/Section'
+      const tsxContent = `import { Content } from '@/components/ui/Content'
 import { Prose } from '@/components/ui/Prose'
 import { GalleryLightboxWrapper, GalleryLightboxItem } from '@/components/ui/GalleryLightbox'
 import { MultiCol, Col } from '@/components/ui/Layout'
 
 export default function ${compName}() {
   return (
-    <Section>
-      <Container>
+    <Content>
         <GalleryLightboxWrapper>
           <MultiCol>
             ${imagesList.map((item, idx) => {
@@ -172,8 +170,7 @@ export default function ${compName}() {
           ${trailingTexts.map(p => `
           <p>${p}</p>`).join('')}
         </Prose>` : ''}
-      </Container>
-    </Section>
+      </Content>
   )
 }
 `;

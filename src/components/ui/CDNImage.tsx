@@ -1,5 +1,5 @@
 interface CDNImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  srcPath: string // e.g. "mitglieder/maxim-1.jpg"
+  srcPath: string // e.g. "gallery/maxim-shirshin/image-1.jpg"
 }
 
 const CDN_URL = import.meta.env.VITE_CDN_URL || ''

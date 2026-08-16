@@ -58,7 +58,7 @@ The process is fully automated via npm scripts and an AWS S3-compatible NodeJS s
 
 ## 🖼️ Image Management
 
-Images for gallery members are stored locally under `images/mitglieder/`.
+Images for gallery members are stored locally under `images/gallery/`.
 During deployment (`npm run deploy`), this directory is mirrored to the GCore Object Storage Bucket.
 
 Inside the React application, images are rendered using the `CDNImage` component, which automatically prefixes asset paths with the `VITE_CDN_URL` configured in your `.env`.
@@ -66,9 +66,9 @@ Inside the React application, images are rendered using the `CDNImage` component
 Example:
 
 ```tsx
-import { CDNImage } from '@/components/CDNImage'
+import { CDNImage } from '@/components/ui/CDNImage'
 
-;<CDNImage srcPath="mitglieder/audrey-1.jpg" alt="Art piece" />
+;<CDNImage srcPath="gallery/audrey-reilly/image-1.jpg" alt="Art piece" />
 ```
 
 ## ⚙️ CDN Routing

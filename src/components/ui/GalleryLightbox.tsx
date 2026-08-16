@@ -1,6 +1,6 @@
 import 'photoswipe/dist/photoswipe.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
-import { CDNImage } from '@/components/CDNImage'
+import { CDNImage } from '@/components/ui/CDNImage'
 
 export function GalleryLightboxItem({
   localPreview,

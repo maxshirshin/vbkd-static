@@ -108,8 +108,8 @@ async function run() {
       const titleBlock = blocks.find(b => b.type === 'h1');
       const title = titleBlock ? titleBlock.text : compName;
       
-      const tsxContent = `import { Container } from '@/components/ui/Container';
-import { Section } from '@/components/ui/Section';
+      const tsxContent = `import { Content } from '@/components/ui/Content';
+;
 import { Heading } from '@/components/ui/Heading';
 import { Prose } from '@/components/ui/Prose';
 import { GalleryLightboxWrapper, GalleryLightboxItem } from '@/components/ui/GalleryLightbox';
@@ -118,14 +118,11 @@ import { MultiCol, Col } from '@/components/ui/Layout';
 export default function ${compName}() {
   return (
     <>
-      <Section className="pb-0 pt-32">
-        <Container>
+      <Content>
           <Heading as="h1" className="mb-0 text-center">{ "${title}" }</Heading>
-        </Container>
-      </Section>
+        </Content>
 
-      <Section>
-        <Container>
+      <Content>
          <GalleryLightboxWrapper>
           <MultiCol>
             ${structuredItems.map(item => {
@@ -168,8 +165,7 @@ export default function ${compName}() {
             }).join('\n')}
           </div>
          </GalleryLightboxWrapper>
-        </Container>
-      </Section>
+        </Content>
     </>
   );
 }

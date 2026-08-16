@@ -1,7 +1,6 @@
 export default Page
 
-import { Section } from '@/components/ui/Section'
-import { Container } from '@/components/ui/Container'
+import { Content } from '@/components/ui/Content'
 import { Heading } from '@/components/ui/Heading'
 import { Prose } from '@/components/ui/Prose'
 
@@ -46,27 +45,25 @@ const articles = [
 
 function Page() {
   return (
-    <Section>
-      <Container size="md">
-        <Heading as="h1" className="text-center mb-12">
-          Neuigkeiten / Journal
-        </Heading>
+    <Content size="md">
+      <Heading as="h1" className="text-center mb-12">
+        Neuigkeiten / Journal
+      </Heading>
 
-        <div className="space-y-16">
-          {articles.map((article, i) => (
-            <article key={i} className="border-b border-border pb-12 last:border-b-0">
-              <Heading as="h2" className="mb-4 text-primary">
-                {article.title}
-              </Heading>
-              <Prose>
-                {article.content.split('\n\n').map((paragraph, pIdx) => (
-                  <p key={pIdx}>{paragraph}</p>
-                ))}
-              </Prose>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </Section>
+      <div className="space-y-16">
+        {articles.map((article, i) => (
+          <article key={i} className="border-b border-border pb-12 last:border-b-0">
+            <Heading as="h2" className="mb-4 text-primary">
+              {article.title}
+            </Heading>
+            <Prose>
+              {article.content.split('\n\n').map((paragraph, pIdx) => (
+                <p key={pIdx}>{paragraph}</p>
+              ))}
+            </Prose>
+          </article>
+        ))}
+      </div>
+    </Content>
   )
 }

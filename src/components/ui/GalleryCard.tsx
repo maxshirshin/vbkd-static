@@ -1,4 +1,4 @@
-import { CDNImage } from '@/components/CDNImage'
+import { CDNImage } from '@/components/ui/CDNImage'
 
 interface GalleryCardProps {
   slug: string

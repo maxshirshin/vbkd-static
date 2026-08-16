@@ -1,15 +1,12 @@
-import { Section } from '@/components/ui/Section'
-import { Container } from '@/components/ui/Container'
+import { Content } from '@/components/ui/Content'
 import { Prose } from '@/components/ui/Prose'
 import { Heading } from '@/components/ui/Heading'
 
 export default function Page({ children }) {
   return (
-    <Section>
-      <Container>
-        <Prose className="max-w-3xl mx-auto">{children}</Prose>
-      </Container>
-    </Section>
+    <Content>
+      <Prose className="max-w-3xl mx-auto">{children}</Prose>
+    </Content>
   )
 }
 
