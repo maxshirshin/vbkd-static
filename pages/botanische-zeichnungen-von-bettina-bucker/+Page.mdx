@@ -1,0 +1,50 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { GalleryLightboxWrapper, GalleryLightboxItem } from '@/components/ui/GalleryLightbox'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-8">
+          Botanische Zeichnungen von Bettina Bücker
+        </Heading>
+      </Col>
+      {children}
+    </Grid>
+  )
+}
+
+<Col lg={12} md={12} sm={12}>
+<GalleryLightboxWrapper>
+  <Grid contained={false}>
+    <Col lg={6} md={6} sm={12}>
+      <GalleryLightboxItem localPreview="botanische-zeichnungen-von-bettina-bucker/photo-1.jpg" alt="Botanische Zeichnung von Bettina Bücker" width={463} height={639} />
+    </Col>
+    <Col lg={6} md={6} sm={12}>
+      <GalleryLightboxItem localPreview="botanische-zeichnungen-von-bettina-bucker/photo-2.jpg" alt="Botanische Zeichnung von Bettina Bücker" width={495} height={640} />
+    </Col>
+  </Grid>
+</GalleryLightboxWrapper>
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+
+<Prose className="max-w-3xl mx-auto mt-8">
+
+**Schau genau hin!**
+
+01. Oktober – 12. November 2023, im Baptisterium der Hauptkirche St. Nikolai, Hamburg
+
+Ausstellungseröffnung: Sonntag, 1. Oktober 2023, 11:00 Uhr
+
+Bettina Bücker
+
+Tel.: +49 171 3130 208
+
+Instagram: [@studio_b_hh](https://instagram.com/studio_b_hh)
+
+</Prose>
+
+</Col>

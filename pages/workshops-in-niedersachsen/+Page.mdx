@@ -1,0 +1,26 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-4">
+          Workshops in Niedersachsen
+        </Heading>
+        <Prose>{children}</Prose>
+      </Col>
+    </Grid>
+  )
+}
+
+### Workshops von Audrey Reilly
+
+Audrey arbeitet hauptsächlich mit Aquarell und Graphit. Sie bietet verschiedene Workshops und Kurse in botanischer Kunst für alle Niveaus in der Region Hannover an.
+
+Mehr über Audrey und ihre Workshops finden Sie hier:
+
+[audreyreilly-art.com/home/workshops](https://www.audreyreilly-art.com/home/workshops/)
+
+E-Mail: [audrey.reilly@gmx.de](mailto:audrey.reilly@gmx.de)

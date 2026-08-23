@@ -1,0 +1,99 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { CDNImage } from '@/components/ui/CDNImage'
+import { GalleryLightboxWrapper, GalleryLightboxItem } from '@/components/ui/GalleryLightbox'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-8">
+          Gründungs-Ausstellung
+        </Heading>
+      </Col>
+      {children}
+    </Grid>
+  )
+}
+
+<Col lg={12} md={12} sm={12}>
+
+<Prose className="max-w-3xl mx-auto mb-8">
+
+Die Mitglieder des neu gegründeten Vereins für Botanische Kunst Deutschland stellen ihre Werke neben historischen Botanischen Illustrationen der Historischen Bibliothek Rudolstadt und der Gesellschaft für Buchkultur e.V. aus.
+
+</Prose>
+
+<CDNImage srcPath="ausstellung-marz-2023/banner.jpg" alt="Gründungs-Ausstellung" className="w-full h-auto object-cover mb-12" />
+
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+<GalleryLightboxWrapper>
+  <Grid contained={false}>
+    <Col lg={4} md={6} sm={12}>
+      <GalleryLightboxItem localPreview="ausstellung-marz-2023/photo-1.png" alt="Gründungs-Ausstellung Impression" width={800} height={600} />
+    </Col>
+    <Col lg={4} md={6} sm={12}>
+      <GalleryLightboxItem localPreview="ausstellung-marz-2023/photo-2.jpg" alt="Gründungs-Ausstellung Impression" width={800} height={600} />
+    </Col>
+    <Col lg={4} md={6} sm={12}>
+      <GalleryLightboxItem localPreview="ausstellung-marz-2023/photo-3.jpg" alt="Gründungs-Ausstellung Impression" width={800} height={600} />
+    </Col>
+    <Col lg={4} md={6} sm={12}>
+      <GalleryLightboxItem localPreview="ausstellung-marz-2023/photo-4.jpg" alt="Gründungs-Ausstellung Impression" width={800} height={600} />
+    </Col>
+  </Grid>
+</GalleryLightboxWrapper>
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+
+<Heading as="h3" className="mt-12">Die Künstler</Heading>
+
+<Prose className="max-w-3xl mx-auto mb-12">
+
+Daniel Rupić, [Sophie Crossart](/sophie-crossart), [Sue Hénon](/sue-henon), [Ines Kamper](/ines-kamper), Katja Katholing-Bloß (siehe [Galerie](/katja-katholing-bloss)), [Dr. Sabine Loos](/dr-sabine-loos), [Audrey Reilly](/audrey-reilly), [Maxim Shirshin](/maxim-shirshin)
+
+</Prose>
+
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+<Grid contained={false}>
+  <Col lg={6} md={12} sm={12}>
+    <Heading as="h4">Historische Bibliothek</Heading>
+    <Prose>
+      <p>
+        Die historische Bibliothek in Rudolstadt besitzt eines der schönsten Pflanzenbücher des
+        18. Jahrhunderts. Es enthält Pflanzenporträts von Georg Ehret, die von Christoph Jacob
+        Trew verlegt wurden. Er hat die schönsten Pflanzenporträts des begnadeten Malers erstmals
+        in diesem Werk der Öffentlichkeit zugänglich gemacht.
+      </p>
+    </Prose>
+  </Col>
+  <Col lg={6} md={12} sm={12}>
+    <Heading as="h4">Gesellschaft für Buchkultur und Geschichte e. V.</Heading>
+    <Prose>
+      <p>
+        1995 gründeten engagierte Mitarbeiter der örtlichen Kultureinrichtungen sowie weitere
+        interessierte Bürger die Gesellschaft für Buchkultur und Geschichte e. V. Rudolstadt.
+      </p>
+      <p>
+        Ein Schwerpunkt ihres Wirkens ist die Beschaffung finanzieller Mittel für die
+        Restaurierung historischer Buchbestände in der Historischen Bibliothek der Stadt
+        Rudolstadt, in der Bibliothek der evang. Kirchgemeinde Rudolstadt, im Thüringer
+        Landesmuseum Heidecksburg Rudolstadt, im Thüringischen Staatsarchiv Rudolstadt und im
+        Stadtarchiv Rudolstadt.
+      </p>
+      <p>
+        Das langjährige Mitglied Dr. Michael Gutheil sammelte über viele Jahre original
+        Kupferstiche, die er freundlicherweise zur Verfügung stellt.
+      </p>
+    </Prose>
+  </Col>
+</Grid>
+
+<CDNImage srcPath="ausstellung-marz-2023/kupferstiche.jpg" alt="Kupferstiche von Dr. Michael Gutheil" className="w-full max-w-2xl mx-auto h-auto object-contain mt-8" />
+</Col>

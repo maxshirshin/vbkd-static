@@ -15,9 +15,6 @@ dist-ssr
 # Environ.env
 .env
 
-# Local images staging folder (for Cloudinary upload)
-images/
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

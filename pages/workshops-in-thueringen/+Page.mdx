@@ -1,0 +1,39 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { CDNImage } from '@/components/ui/CDNImage'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-4">
+          Workshops in Thüringen
+        </Heading>
+      </Col>
+      {children}
+    </Grid>
+  )
+}
+
+<Col lg={12} md={12} sm={12}>
+
+<Prose>
+
+Ein Workshop von Sabine Loos findet am Pfingstwochenende in Rudolstadt, Thüringen statt!
+
+Weitere Infos auf [www.sabine-loos.de](https://www.sabine-loos.de/)
+
+</Prose>
+
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+<Grid contained={false}>
+  <Col lg={4} md={6} sm={12}>
+    <CDNImage srcPath="workshops/thueringen-1.jpg" alt="Workshop von Sabine Loos am Pfingstwochenende" className="w-full h-auto object-cover" />
+  </Col>
+</Grid>
+
+<Heading as="h3" className="mt-8">Workshop von Sabine Loos am Pfingstwochenende</Heading>
+</Col>

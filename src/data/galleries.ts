@@ -5,7 +5,6 @@ import MaximShirshin from '../../content/gallery/MaximShirshin'
 import SueHenon from '../../content/gallery/SueHenon'
 import AudreyReilly from '../../content/gallery/AudreyReilly'
 import DrSabineLoos from '../../content/gallery/DrSabineLoos'
-import DanielRupic from '../../content/gallery/DanielRupic'
 import KatjaKatholingBloss from '../../content/gallery/KatjaKatholingBloss'
 import SophieCrossart from '../../content/gallery/SophieCrossart'
 import InesKamper from '../../content/gallery/InesKamper'
@@ -47,13 +46,6 @@ export const galleries: Gallery[] = [
     Component: DrSabineLoos,
     coverImage: 'gallery/dr-sabine-loos/image-1.jpg',
     description: 'Botanische Kunst von Dr. Sabine Loos',
-  },
-  {
-    slug: 'daniel-rupic',
-    title: 'Daniel Rupić',
-    Component: DanielRupic,
-    coverImage: 'gallery/daniel-rupic/image-1.jpg',
-    description: 'Botanische Kunst von Daniel Rupić',
   },
   {
     slug: 'katja-katholing-bloss',

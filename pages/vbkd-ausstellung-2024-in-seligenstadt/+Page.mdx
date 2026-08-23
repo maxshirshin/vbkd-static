@@ -1,0 +1,102 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { CDNImage } from '@/components/ui/CDNImage'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-8">
+          Ein Klostergarten: VBKD-Ausstellung 2024 in Seligenstadt
+        </Heading>
+      </Col>
+      {children}
+    </Grid>
+  )
+}
+
+<Col lg={12} md={12} sm={12}>
+<Grid contained={false}>
+  <Col lg={8} md={12} sm={12}>
+    <Prose>
+      <p>
+        Die VBKD Jahresausstellung 2024 wird am 28. August 2024 in Seligenstadt, Deutschland,
+        eröffnet. Mitglieder von VBKD präsentieren ihre Kunstwerke, die dem Thema »Ein
+        Klostergarten« gewidmet sind und Pflanzen zeigen, die man in den Klostergärten früherer
+        Zeiten finden konnte.
+      </p>
+      <p>
+        Präsentiert werden Kunstwerke, die mit verschiedenen Medien wie Aquarell, Buntstift oder
+        Graphit erstellt wurden. Die Werke sind so ausgewählt, dass sie das Thema Klostergarten am
+        besten repräsentieren und botanisch korrekte und ästhetisch ansprechende Darstellungen von
+        Pflanzen in der besten Tradition der botanischen Kunst zeigen.
+      </p>
+      <p>
+        Die Ausstellung ist vom 28. August bis zum 6. Oktober 2024 jeden Samstag und Sonntag
+        (sowie an Feiertagen) von 11:00 bis 17:00 Uhr geöffnet.
+      </p>
+    </Prose>
+  </Col>
+  <Col lg={4} md={12} sm={12}>
+    <CDNImage srcPath="vbkd-ausstellung-2024-in-seligenstadt/poster.jpg" alt="Ein Klostergarten: VBKD-Ausstellung 2024 in Seligenstadt" className="w-full h-auto object-contain" />
+  </Col>
+</Grid>
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+
+<Heading as="h3" className="mt-12">Folgende VBKD-Mitglieder stellen in Seligenstadt aus</Heading>
+
+<Grid contained={false}>
+  <Col lg={4} md={6} sm={12}>
+    <Prose className="text-base">
+      <ul className="list-disc list-inside">
+        <li>Annika Dangendorf</li>
+        <li>Astrid Riedenauer</li>
+        <li>Audrey Reilly</li>
+        <li>Barbara Redelin</li>
+        <li>Bergrun Neff</li>
+        <li>Bettina Bücker</li>
+        <li>Brigitte Rückle</li>
+        <li>Christine Nagel-Varvodic</li>
+        <li>Dieter Schiela</li>
+        <li>Erzsébet Lázár</li>
+      </ul>
+    </Prose>
+  </Col>
+  <Col lg={4} md={6} sm={12}>
+    <Prose className="text-base">
+      <ul className="list-disc list-inside">
+        <li>Ines Kamper</li>
+        <li>Irene Brettreich</li>
+        <li>Isabella Burk</li>
+        <li>Julia Birst</li>
+        <li>Kailin Sun</li>
+        <li>Kateryna Spirtus</li>
+        <li>Katja Katholing-Bloss</li>
+        <li>Lesia Zaitseva</li>
+        <li>Leslie Bocker</li>
+        <li>Manuela Herhaus</li>
+      </ul>
+    </Prose>
+  </Col>
+  <Col lg={4} md={6} sm={12}>
+    <Prose className="text-base">
+      <ul className="list-disc list-inside">
+        <li>Margitta Baum</li>
+        <li>Marina Dudko</li>
+        <li>Maxim Shirshin</li>
+        <li>Nadiya Kyrylenko</li>
+        <li>Oksana Kuzmina</li>
+        <li>Ruth Moritz-Hoffmann</li>
+        <li>Sophie Crossart</li>
+        <li>Stefanie Faust</li>
+        <li>Sue Hénon</li>
+        <li>Susanne Jampen</li>
+        <li>Ute Meißner</li>
+      </ul>
+    </Prose>
+  </Col>
+</Grid>
+</Col>

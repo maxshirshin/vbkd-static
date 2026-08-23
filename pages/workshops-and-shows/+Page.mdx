@@ -1,0 +1,31 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-4">
+          Workshops
+        </Heading>
+        <Prose>{children}</Prose>
+      </Col>
+    </Grid>
+  )
+}
+
+Workshops vor Ort und online von Künstlern im deutschsprachigen Raum.
+
+#### Workshops vor Ort
+
+Hier findest du nach Bundesländern geordneten Präsenzunterricht in botanischer Kunst:
+
+- [Hessen](/workshops-in-hessen)
+- [Bayern](/workshops-in-bayern)
+- [Niedersachsen](/workshops-in-niedersachsen)
+- [Thüringen](/workshops-in-thueringen)
+
+#### Onlineunterricht
+
+- [Botanische Aquarellmalerei: realistisches Malen nach der Natur](/botanische-aquarellmalerei) mit Sophie Crossart

@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { NavLink } from '@/components/NavLink'
+import { CDNImage } from '@/components/ui/CDNImage'
 
 const navigation = [
   { label: 'Startseite', href: '/' },
-  { label: 'Galerie', href: '/gallery' },
+  { label: 'Galerie', href: '/mitglieder' },
   { label: 'News', href: '/news' },
-  { label: 'Über uns', href: '/about' },
+  { label: 'Workshops & Shows', href: '/workshops-and-shows' },
+  { label: 'Über uns', href: '/uber-uns' },
   { label: 'Mitgliedschaft', href: '/mitgliedschaft' },
-  { label: 'Kontakt', href: '/contact' },
+  { label: 'Kontakt', href: '/kontakt' },
 ]
 
 export function Header() {
@@ -17,12 +19,22 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm h-[80px]">
       <div className="container max-w-[var(--container-max)] mx-auto px-6 flex items-center justify-between h-full">
         {/* Logo / Site Name */}
-        <a href="/" className="flex flex-col leading-tight hover:opacity-80 transition-opacity">
-          <span className="text-xl tracking-[0.3em] uppercase font-heading text-primary-dark">
-            VBKD
-          </span>
-          <span className="text-xs tracking-[0.15em] uppercase text-text-muted">
-            Verein für Botanische Kunst
+        <a href="/" className="flex items-center gap-3 leading-tight hover:opacity-80 transition-opacity">
+          <CDNImage
+            srcPath="logo.png"
+            alt="VBKD Vereinslogo"
+            className="w-15 h-15 object-contain"
+          />
+          <span className="flex flex-col">
+            <span className="text-xl tracking-[0.3em] uppercase font-heading text-primary-dark">
+              VBKD
+            </span>
+            <span className="text-xs tracking-[0.15em] uppercase text-text-muted">
+              Verein für Botanische Kunst
+            </span>
+            <span className="text-xs tracking-[0.15em] uppercase text-text-muted">
+              Deutschland
+            </span>
           </span>
         </a>
 

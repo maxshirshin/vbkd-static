@@ -1,0 +1,227 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { CDNImage } from '@/components/ui/CDNImage'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-4">
+          Neuigkeiten
+        </Heading>
+      </Col>
+      {children}
+    </Grid>
+  )
+}
+
+
+<Col lg={4} md={12} sm={12}>
+  <CDNImage srcPath="news/journal-13.jpg" alt="VBKD Journal Nr. 13, August 2026" className="w-full h-auto object-contain mb-4" />
+</Col>
+<Col lg={8} md={12} sm={12}>
+  <Heading as="h3">VBKD Journal Nr. 13, August 2026</Heading>
+  <Prose className="text-base">
+    Auch diese Ausgabe lädt ein, sich inspirieren zu lassen – mit einer abwechslungsreichen Mischung aus Beiträgen, persönlichen Geschichten, Interviews, praktischen Tipps sowie Buch- und Filmtipps. Sie zeigen, wie vielfältig die botanische Kunst ist und wie viel es immer wieder neu zu entdecken gibt.
+  </Prose>
+</Col>
+
+<Col lg={4} md={12} sm={12}>
+  <CDNImage srcPath="news/journal-12.png" alt="VBKD Journal Nr. 12, Mai 2026" className="w-full h-auto object-contain mb-4" />
+</Col>
+<Col lg={8} md={12} sm={12}>
+  <Heading as="h3">VBKD Journal Nr. 12, Mai 2026</Heading>
+  <Prose className="text-base">
+    <p>
+      Mit der 12. Ausgabe des Journals des Vereins für Botanische Kunst Deutschland (Mai 2026)
+      erhalten die Mitglieder einen Rückblick auf die internationale Ausstellung »Orchids,
+      Orchids, Orchids...« im Rahmen der 24. World Orchid Conference in Dresden. Die Bilder der
+      Preisgewinner in den unterschiedlichen Kategorien werden auch gezeigt.
+    </p>
+    <p>
+      Wichtige interne Mitteilungen sind die Neuerungen nach der Mitgliederversammlung im Mai und
+      erste Informationen zur Erlangung einer Premium-Mitgliedschaft. Neben diesen bietet das
+      Journal Informationen zu den Themen Botanik, Praxis und Farbpigmenten:
+    </p>
+    <p>
+      Es porträtiert die Zitterpappel als Baum des Jahres 2026 und klärt die botanische Definition
+      von echten Beeren. Vorgestellt werden der Hermanshof in Weinheim und der Huerto del Cura im
+      spanischen Elche. Zwei hilfreiche Webseiten zur Analyse von Farbpigmenten und die Historie
+      des Indigos zeigen Aspekte unserer Pigmente auf. Die Leser bekommen eine Übersicht zu
+      aktuellen Ausstellungen, Tipps zum Schützen von Papierrändern, hilfreichen Büchern und die
+      Ankündigung eines Online-Talks von Svetlana Lanse über Aquarelltechniken. Dr. Stefanie Faust
+      stellt sich als Mitglied des Vereins vor.
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+  <Heading as="h3">Orchids, Orchids, Orchids...</Heading>
+  <Prose className="text-base">
+    <p>
+      Der Verein Botanische Kunst Deutschland lädt Sie herzlich zur kommenden Ausstellung
+      „Orchideen, Orchideen, Orchideen…“ in der Messe Dresden ein.
+    </p>
+    <p>
+      <a href="/orchids-orchids-orchids" className="text-accent hover:text-accent-dark">
+        Weiterlesen
+      </a>
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={4} md={12} sm={12}>
+  <CDNImage srcPath="news/journal-11.png" alt="Journal Nr. 11 des VBKD" className="w-full h-auto object-contain mb-4" />
+</Col>
+<Col lg={8} md={12} sm={12}>
+  <Heading as="h3">Journal Nr. 11 des VBKD</Heading>
+  <Prose className="text-base">
+    <p>
+      Die elfte Ausgabe des Journals des Vereins für Botanische Kunst Deutschland (Februar 2026)
+      bereitet die Mitglieder umfassend auf die bevorstehende internationale Ausstellung »Orchids,
+      Orchids, Orchids...« im Rahmen der 24. World Orchid Conference in Dresden vor, inklusive
+      detaillierter Pläne zu Vorführungen, Vorträgen und Preisverleihungen.
+    </p>
+    <p>
+      Neben diesen bietet das Journal reichhaltige Informationen zu den Themen Botanik, Praxis und
+      Kunsthistorie:
+    </p>
+    <p>
+      Es porträtiert den Feldrittersporn als Blume des Jahres 2026, klärt den botanischen
+      Unterschied zwischen Dornen und Stacheln und beleuchtet Alexander von Humboldts Beitrag zur
+      botanischen Illustration. Die Leser bekommen eine Übersicht zu aktuellen Zeichen-Workshops
+      der Mitglieder, Tipps zum Tuschezeichnen auf Folie sowie die Ankündigung eines Online-Talks
+      von Daria Beizerov über reduzierte Aquarellpaletten. Abgerundet wird das Journal durch
+      persönliche Künstlerporträts und ein Interview mit der Malerin Elfi Ekhoff und die
+      Vorstellung der Geigerin und neuen Künstlerin Daria Beizerov.
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+  <Heading as="h3">»Ein Klostergarten« VBKD Ausstellung 2024 in Seligenstadt</Heading>
+  <Prose className="text-base">
+    <p>
+      Die VBKD Jahresausstellung 2024 wird am 28. August 2024 in Seligenstadt, Deutschland,
+      eröffnet. Mitglieder von VBKD präsentieren ihre Kunstwerke, die dem Thema »Ein
+      Klostergarten« gewidmet sind und Pflanzen zeigen, die man in den Klostergärten früherer
+      Zeiten finden konnte.
+    </p>
+    <p>
+      <a href="/vbkd-ausstellung-2024-in-seligenstadt" className="text-accent hover:text-accent-dark">
+        Weiterlesen
+      </a>
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={4} md={12} sm={12}>
+  <CDNImage srcPath="news/newsletter-mai-2024.jpg" alt="VBKD Newsletter Mai 2024" className="w-full h-auto object-contain mb-4" />
+</Col>
+<Col lg={8} md={12} sm={12}>
+  <Heading as="h3">VBKD Newsletter Mai 2024</Heading>
+  <Prose className="text-base">
+    <p>
+      Der neue VBKD Newsletter ist da! Dieser Newsletter, der allen Vereinsmitgliedern zur
+      Verfügung steht, enthält aktuelle Informationen über die Projekte der Gesellschaft sowie
+      nützliche Infos über botanische Kunst, Buchvorstellungen, Artikel über Künstler und
+      Maltechniken sowie Tipps und Tricks.
+    </p>
+    <p>
+      <a href="/mitgliedschaft" className="text-accent hover:text-accent-dark">
+        Werde Mitglied
+      </a>{' '}
+      und erhalte alle zukünftigen Ausgaben des Newsletters in dein E-Mail-Postfach!
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={4} md={12} sm={12}>
+  <CDNImage srcPath="news/art-und-vielfalt.jpg" alt="ART & Vielfalt – Impressionen aus der Tier- und Pflanzenwelt" className="w-full h-auto object-contain mb-4" />
+</Col>
+<Col lg={8} md={12} sm={12}>
+  <Heading as="h3">ART & Vielfalt – Impressionen aus der Tier- und Pflanzenwelt</Heading>
+  <Prose className="text-base">
+    <p>
+      Die Ausstellung widmet sich den realistischen und naturgetreuen künstlerischen
+      Darstellungen von ausgestorbenen und rezenten Wild- und Zootieren sowie Pflanzen. Gezeigt
+      werden Kunstwerke in verschiedenen Techniken wie Malerei, Grafik, Handzeichnung, Plastik und
+      Skulptur.
+    </p>
+    <p>
+      Museum für Naturkunde Magdeburg, vom 30. Juni bis 20. Oktober 2024. Öffnungszeiten: Dienstag
+      bis Freitag 10.00–17.00 Uhr und Samstag/Sonntag 10.00–18.00 Uhr. Eintritt: 5 Euro, ermäßigt 3
+      Euro, Kinder und Jugendliche bis 18 Jahre frei.
+    </p>
+    <p>
+      Informationen: Tel.: 0391 /5 40 35 30, E-Mail:{' '}
+      <a href="mailto:service@museen.magdeburg.de" className="text-accent hover:text-accent-dark">
+        service@museen.magdeburg.de
+      </a>
+    </p>
+    <p>
+      <a
+        href="https://www.naturkundemuseum-magdeburg.de"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-accent hover:text-accent-dark"
+      >
+        www.naturkundemuseum-magdeburg.de
+      </a>
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={4} md={12} sm={12}>
+  <CDNImage srcPath="news/botanische-wunder-2023.jpg" alt="VBKD Online Ausstellung 2023 »Botanische Wunder«" className="w-full h-auto object-contain mb-4" />
+</Col>
+<Col lg={8} md={12} sm={12}>
+  <Heading as="h3">VBKD Online Ausstellung 2023 »Botanische Wunder«</Heading>
+  <Prose className="text-base">
+    <p>
+      Die Ausstellung widmet sich den Botanischen Wundern.
+    </p>
+    <p>
+      Unsere Welt bietet uns einige der schönsten Pflanzenarten, die man sich vorstellen kann. Jede
+      Phase der Entwicklung einer Pflanze zeigt uns etwas Neues und Interessantes. Jede Jahreszeit
+      bietet uns einen anderen Blick auf unsere Pflanzenwelt und jede ist so faszinierend, wie die
+      vorherige.
+    </p>
+    <p>
+      Unsere Künstler haben dieses Thema mit verschiedenen Techniken interpretiert und wir freuen
+      uns, ihre Werke in dieser Ausstellung zu präsentieren.
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+  <Heading as="h3">VBKD Newsletter</Heading>
+  <Prose className="text-base">
+    <p>
+      Im August 2023 haben wir unseren ersten Newsletter über botanische Kunst veröffentlicht! Der
+      Newsletter enthält Informationen über den Verein und informative Artikel zum Thema
+      botanische Kunst. Er ist für alle Mitglieder des VBKD verfügbar.
+    </p>
+    <p>
+      <a href="/ausstellung-marz-2023" className="text-accent hover:text-accent-dark">
+        Weiterlesen
+      </a>
+    </p>
+  </Prose>
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+  <Heading as="h3">Gründungs-Ausstellung</Heading>
+  <Prose className="text-base">
+    <p>
+      Die Eröffnungsausstellung des VBKD 2023 läuft bis zum 19. Mai. Wir freuen uns darauf, euch
+      im Rahmen unserer Gründung wunderbare Werke unserer Gründungsmitglieder zu präsentieren!
+    </p>
+    <p>
+      <a href="/ausstellung-marz-2023" className="text-accent hover:text-accent-dark">
+        Weiterlesen
+      </a>
+    </p>
+  </Prose>
+</Col>

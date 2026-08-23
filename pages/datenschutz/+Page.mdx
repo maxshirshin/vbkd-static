@@ -1,12 +1,14 @@
-import { Content } from '@/components/ui/Content'
 import { Prose } from '@/components/ui/Prose'
 import { Heading } from '@/components/ui/Heading'
+import { Grid, Col } from '@/components/ui/Layout'
 
 export default function Page({ children }) {
   return (
-    <Content>
-      <Prose className="max-w-3xl mx-auto">{children}</Prose>
-    </Content>
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Prose className="max-w-3xl mx-auto">{children}</Prose>
+      </Col>
+    </Grid>
   )
 }
 

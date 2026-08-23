@@ -1,0 +1,58 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { CDNImage } from '@/components/ui/CDNImage'
+import { Grid, Col } from '@/components/ui/Layout'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-4">
+          Workshops in Bayern
+        </Heading>
+      </Col>
+      {children}
+    </Grid>
+  )
+}
+
+<Col lg={12} md={12} sm={12}>
+
+<Heading as="h3">Workshops von Katja Katholing-Bloss</Heading>
+
+<Prose>
+
+**Aquarell/Grafit Wochenend-Workshops**
+
+Diese Workshops sind hauptsächlich für Anfänger, aber auch für Geübte, die ihre Grundkenntnisse in der Aquarell- oder Grafitmalerei unter dem Aspekt der Botanischen Kunst weiterentwickeln möchten. Auch ohne Vorkenntnisse ist dieser Kurs für jedermann geeignet, jedoch sollte ein Interesse am Zeichnen und ein Blick fürs Detail vorhanden sein.
+
+**30-Stunden-Kurs für Anfänger, Geübte und Fortgeschrittene**
+
+Dieser Kurs beinhaltet vor allem das detaillierte Studieren von Pflanzen sowie den Einsatz von Arbeitsmaterialien, Techniken und modernen Hilfsmitteln. Den Teilnehmern werden u.a. Zeichentechniken, Pflanzenstruktur, Farblehre/Farbmischung, verschiedene Medien (Bleistift, Aquarellfarbe, Tusche) sowie Perspektive, Maßstab, Komposition, etc. vermittelt. Diese wöchentlichen Kurse finden im Frühjahr und im Herbst in zwei kleinen Gruppen am Mittwoch oder Donnerstag im Studio für Botanische Kunst in Hof/Saale statt.
+
+**Intensiv-Einzelcoaching**
+
+Sie kennen die Botanische Illustration bereits und möchten Ihre vorhandenen Kenntnisse vertiefen? Dann buchen Sie Einzelstunden. In meinem Studio oder auch gerne in Ihrer gewohnten Umgebung, zeige ich Ihnen einige Tricks und leiste individuelle Hilfestellung, damit Ihre Kunstwerke noch detailgetreuer aussehen werden.
+
+Für meine weiteren nationalen oder internationalen Workshops, schauen Sie gerne auf meine Webpage oder kontaktieren Sie mich persönlich.
+
+[info@katjakatholing-bloss.com](mailto:info@katjakatholing-bloss.com)
+
+[www.katjakatholing-bloss.com](https://www.katjakatholing-bloss.com/)
+
+[www.instagram.com/katjakatholingbloss](https://www.instagram.com/katjakatholingbloss/)
+
+</Prose>
+
+</Col>
+
+<Col lg={12} md={12} sm={12}>
+<Grid contained={false}>
+  <Col lg={6} md={6} sm={12}>
+    <CDNImage srcPath="workshops/bayern-1.jpg" alt="Workshop von Katja Katholing-Bloss" className="w-full h-auto object-cover" />
+  </Col>
+  <Col lg={6} md={6} sm={12}>
+    <CDNImage srcPath="workshops/bayern-2.jpg" alt="Workshop von Katja Katholing-Bloss" className="w-full h-auto object-cover" />
+  </Col>
+</Grid>
+</Col>

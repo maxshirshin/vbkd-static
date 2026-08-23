@@ -1,0 +1,68 @@
+import { Heading } from '@/components/ui/Heading'
+import { Prose } from '@/components/ui/Prose'
+import { Grid, Col } from '@/components/ui/Layout'
+import { cdnFileUrl } from '@/lib/cdn'
+
+export default function Page({ children }) {
+  return (
+    <Grid>
+      <Col lg={12} md={12} sm={12}>
+        <Heading as="h1" className="text-center mb-8">
+          Lebensläufe von Künstler/innen in der Ausstellung »Orchids, Orchids, Orchids...« 2026
+        </Heading>
+      </Col>
+      {children}
+    </Grid>
+  )
+}
+
+<Col lg={12} md={12} sm={12}>
+<Grid contained={false}>
+  <Col lg={4} md={6} sm={12}>
+    <Prose className="text-base">
+      <ul className="list-disc list-inside space-y-1">
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/audrey-reilly.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Audrey Reilly</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/bettina-buecker.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Bettina Bücker</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/bettina-ewig.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Bettina Ewig</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/carol-woodin.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Carol Woodin</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/daria-beizerov.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Daria Beizerov</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/deborah-lambkin.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Deborah Lambkin</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/dieter-schiela.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Dieter Schiela</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/elisabeth-lazar.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Elisabeth Lazar</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/enzo-forgione.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Enzo Forgione</a></li>
+        <li><a href="http://www.esmeewinkel.nl/" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Esmee Winkel</a></li>
+      </ul>
+    </Prose>
+  </Col>
+  <Col lg={4} md={6} sm={12}>
+    <Prose className="text-base">
+      <ul className="list-disc list-inside space-y-1">
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/hilde-orye.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Hilde Orye</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/ines-kamper.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Ines Kamper</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/julia-birst.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Julia Birst</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/jutta-bremberger.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Jutta Bremberger</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/kailin-weitkaemper.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Kailin Weitkaemper (geb. Sun)</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/kristin-tessen.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Kristin Tessen</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/lesia-zaitseva.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Lesia Zaitseva</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/leslie-bocker.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Leslie Bocker</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/margareta-pertl.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Margareta Pertl</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/margitta-baum.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Margitta Baum</a></li>
+      </ul>
+    </Prose>
+  </Col>
+  <Col lg={4} md={6} sm={12}>
+    <Prose className="text-base">
+      <ul className="list-disc list-inside space-y-1">
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/maria-euthum.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Maria Euthum</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/mary-adler.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Mary Adler</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/nadiya-kyrylenko.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Nadiya Kyrylenko</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/odette-roesch-ranzini.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Odette Roesch Ranzini</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/sophie-crossart.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Sophie Crossart</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/katerina-spirtus.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Spirtus Katerina</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/stefanie-faust.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Stefanie Faust</a></li>
+        <li><a href={cdnFileUrl('orchideen-ausstellung/cv/stephanie-schweitzer.pdf')} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent-dark">Stephanie Schweitzer</a></li>
+      </ul>
+    </Prose>
+  </Col>
+</Grid>
+</Col>

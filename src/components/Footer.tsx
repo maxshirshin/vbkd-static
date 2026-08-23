@@ -18,7 +18,7 @@ export function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-3 text-text">Links</h4>
             <ul className="space-y-2 text-sm text-text-muted flex flex-col">
               <li>
-                <a href="/about" className="hover:text-primary transition-colors">
+                <a href="/uber-uns" className="hover:text-primary transition-colors">
                   Über uns
                 </a>
               </li>

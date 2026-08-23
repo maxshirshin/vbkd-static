@@ -9,7 +9,7 @@ interface GalleryCardProps {
 
 export function GalleryCard({ slug, title, description, coverImage }: GalleryCardProps) {
   return (
-    <a href={`/gallery/${slug}`} className="group block">
+    <a href={`/${slug}`} className="group block">
       {coverImage ? (
         <CDNImage
           srcPath={coverImage}
