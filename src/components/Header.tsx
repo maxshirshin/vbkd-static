@@ -23,17 +23,14 @@ export function Header() {
           <CDNImage
             srcPath="logo.png"
             alt="VBKD Vereinslogo"
-            className="w-15 h-15 object-contain"
+            className="min-w-15 w-15 h-15 object-contain"
           />
-          <span className="flex flex-col">
+          <span className="flex flex-col pr-4">
             <span className="text-xl tracking-[0.3em] uppercase font-heading text-primary-dark">
               VBKD
             </span>
-            <span className="text-xs tracking-[0.15em] uppercase text-text-muted">
+            <span className="inline md:hidden lg:inline text-xs tracking-[0.15em] uppercase text-text-muted">
               Verein für Botanische Kunst
-            </span>
-            <span className="text-xs tracking-[0.15em] uppercase text-text-muted">
-              Deutschland
             </span>
           </span>
         </a>
