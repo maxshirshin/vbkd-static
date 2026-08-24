@@ -219,7 +219,7 @@ use (no `f_auto`, `q_auto`, resizing, gravity, etc.).
 - `VITE_CDN_URL` (set in `.env`) must point at the CDN/origin serving the
   bucket contents, e.g. `https://www.verein-botanischekunst.de` or a
   `.gcdn.co` edge URL.
-- The local `images/` folder (gitignored) mirrors the `gallery/<slug>/...`
+- The local `images/` folder mirrors the `gallery/<slug>/...`
   paths referenced by gallery components and is uploaded verbatim.
 
 ### Deployment (`npm run deploy`)
@@ -227,7 +227,12 @@ use (no `f_auto`, `q_auto`, resizing, gravity, etc.).
 `scripts/deploy-gcore.mjs` uses `@aws-sdk/client-s3` against GCore's
 S3-compatible Object Storage API to upload both `dist/client/` (the built
 site) and the local `images/` directory, computing MIME types
-(`mime-types`) and setting aggressive `Cache-Control` headers. Requires a
+(`mime-types`) and setting aggressive `Cache-Control` headers. Before
+uploading each file, it checks the remote object's `ETag` (MD5 of a plain
+`PutObject`) against the local file's MD5 and skips the upload if they
+match, so re-running `npm run deploy` only pushes changed files. Pass
+`--force` (`node scripts/deploy-gcore.mjs --force`) to re-upload everything
+regardless. Requires a
 `.env` with:
 
 ```

@@ -6,6 +6,10 @@
  * GCore Object Storage offers an S3-compatible API.
  * This script uploads the contents of `dist/client` to your GCore bucket.
  *
+ * Files are skipped if a remote object already exists with a matching
+ * content hash (compared via the object's ETag, which equals the MD5 of a
+ * plain PutObject upload). Pass --force to re-upload everything regardless.
+ *
  * Requires a `.env` file at the project root with:
  *   GCORE_S3_ENDPOINT (e.g., https://s-ed1.cloud.gcore.lu)
  *   GCORE_S3_REGION (e.g., ed1)
@@ -15,28 +19,32 @@
  */
 
 import "dotenv/config";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3";
 import { readdir, readFile } from "node:fs/promises";
 import { resolve, relative, join } from "node:path";
+import { createHash } from "node:crypto";
 import mime from "mime-types";
+
+// Pass --force to re-upload every file regardless of remote content match
+const FORCE = process.argv.includes("--force");
 
 // ── Config ──────────────────────────────────────────────────────────────────
 
 const DIST_DIR = resolve("dist/client");
 const IMAGES_DIR = resolve("images"); // We will also upload images separately
 
-const { 
-  GCORE_S3_ENDPOINT, 
-  GCORE_S3_REGION, 
-  GCORE_S3_BUCKET, 
-  GCORE_S3_ACCESS_KEY, 
-  GCORE_S3_SECRET_KEY 
+const {
+  GCORE_S3_ENDPOINT,
+  GCORE_S3_REGION,
+  GCORE_S3_BUCKET,
+  GCORE_S3_ACCESS_KEY,
+  GCORE_S3_SECRET_KEY
 } = process.env;
 
 if (!GCORE_S3_ENDPOINT || !GCORE_S3_BUCKET || !GCORE_S3_ACCESS_KEY || !GCORE_S3_SECRET_KEY) {
   console.error(
     "❌  Missing GCore credentials. Ensure .env contains:\n" +
-      "   GCORE_S3_ENDPOINT, GCORE_S3_REGION, GCORE_S3_BUCKET, GCORE_S3_ACCESS_KEY, GCORE_S3_SECRET_KEY"
+    "   GCORE_S3_ENDPOINT, GCORE_S3_REGION, GCORE_S3_BUCKET, GCORE_S3_ACCESS_KEY, GCORE_S3_SECRET_KEY"
   );
   process.exit(1);
 }
@@ -80,6 +88,17 @@ async function collectFiles(dir) {
   return files;
 }
 
+/** Returns the remote object's ETag (MD5 hex, unquoted) or null if it doesn't exist. */
+async function getRemoteETag(key) {
+  try {
+    const res = await s3.send(new HeadObjectCommand({ Bucket: GCORE_S3_BUCKET, Key: key }));
+    return (res.ETag || "").replace(/"/g, "");
+  } catch (err) {
+    if (err.name === "NotFound" || err.$metadata?.httpStatusCode === 404) return null;
+    throw err;
+  }
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 
 async function uploadDirectory(dir, prefix = "") {
@@ -89,15 +108,26 @@ async function uploadDirectory(dir, prefix = "") {
   console.log(`Uploading ${files.length} files from ${dir} to prefix '/${prefix}'...\n`);
 
   let uploaded = 0;
+  let skipped = 0;
   let failed = 0;
 
   for (const filePath of files) {
     const relPath = relative(dir, filePath).split("\\").join("/");
     const objectKey = prefix ? `${prefix}${relPath}` : relPath;
-    
+
     // Determine content type (default to octet-stream)
     const contentType = mime.lookup(filePath) || "application/octet-stream";
     const body = await readFile(filePath);
+
+    if (!FORCE) {
+      const localHash = createHash("md5").update(body).digest("hex");
+      const remoteETag = await getRemoteETag(objectKey);
+      if (remoteETag === localHash) {
+        console.log(`  ⏭️  Unchanged, skipped: ${objectKey}`);
+        skipped++;
+        continue;
+      }
+    }
 
     try {
       await s3.send(
@@ -119,20 +149,22 @@ async function uploadDirectory(dir, prefix = "") {
     }
   }
 
-  return { uploaded, failed };
+  return { uploaded, skipped, failed };
 }
 
 async function main() {
   console.log("🚀 Starting deployment to GCore Object Storage...\n");
-  
+
   // 1. Upload built static site
   const distResult = await uploadDirectory(DIST_DIR, "");
-  
+
   // 2. Upload images (to an /images path)
   const imagesResult = await uploadDirectory(IMAGES_DIR, "images/");
 
   console.log(
-    `\n🎉 Done! Total uploaded: ${(distResult?.uploaded || 0) + (imagesResult?.uploaded || 0)}, Failed: ${(distResult?.failed || 0) + (imagesResult?.failed || 0)}.`
+    `\n🎉 Done! Uploaded: ${(distResult?.uploaded || 0) + (imagesResult?.uploaded || 0)}, ` +
+    `Skipped (unchanged): ${(distResult?.skipped || 0) + (imagesResult?.skipped || 0)}, ` +
+    `Failed: ${(distResult?.failed || 0) + (imagesResult?.failed || 0)}.`
   );
 }
 
