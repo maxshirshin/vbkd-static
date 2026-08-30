@@ -17,36 +17,42 @@ export default function Page({ children }) {
 }
 
 <Col lg={12} md={12} sm={12}>
-<Grid contained={false}>
-  <Col lg={8} md={12} sm={12}>
-    <Prose>
-      <p>
-        Die VBKD Jahresausstellung 2024 wird am 28. August 2024 in Seligenstadt, Deutschland,
-        eröffnet. Mitglieder von VBKD präsentieren ihre Kunstwerke, die dem Thema »Ein
-        Klostergarten« gewidmet sind und Pflanzen zeigen, die man in den Klostergärten früherer
-        Zeiten finden konnte.
-      </p>
-      <p>
-        Präsentiert werden Kunstwerke, die mit verschiedenen Medien wie Aquarell, Buntstift oder
-        Graphit erstellt wurden. Die Werke sind so ausgewählt, dass sie das Thema Klostergarten am
-        besten repräsentieren und botanisch korrekte und ästhetisch ansprechende Darstellungen von
-        Pflanzen in der besten Tradition der botanischen Kunst zeigen.
-      </p>
-      <p>
-        Die Ausstellung ist vom 28. August bis zum 6. Oktober 2024 jeden Samstag und Sonntag
-        (sowie an Feiertagen) von 11:00 bis 17:00 Uhr geöffnet.
-      </p>
-    </Prose>
-  </Col>
-  <Col lg={4} md={12} sm={12}>
-    <CDNImage srcPath="vbkd-ausstellung-2024-in-seligenstadt/poster.jpg" alt="Ein Klostergarten: VBKD-Ausstellung 2024 in Seligenstadt" className="w-full h-auto object-contain" />
-  </Col>
-</Grid>
+  <Grid contained={false}>
+    <Col lg={8} md={12} sm={12}>
+      <Prose>
+        <p>
+          Die VBKD Jahresausstellung 2024 wird am 28. August 2024 in Seligenstadt, Deutschland,
+          eröffnet. Mitglieder von VBKD präsentieren ihre Kunstwerke, die dem Thema »Ein
+          Klostergarten« gewidmet sind und Pflanzen zeigen, die man in den Klostergärten früherer
+          Zeiten finden konnte.
+        </p>
+        <p>
+          Präsentiert werden Kunstwerke, die mit verschiedenen Medien wie Aquarell, Buntstift oder
+          Graphit erstellt wurden. Die Werke sind so ausgewählt, dass sie das Thema Klostergarten am
+          besten repräsentieren und botanisch korrekte und ästhetisch ansprechende Darstellungen von
+          Pflanzen in der besten Tradition der botanischen Kunst zeigen.
+        </p>
+        <p>
+          Die Ausstellung ist vom 28. August bis zum 6. Oktober 2024 jeden Samstag und Sonntag
+          (sowie an Feiertagen) von 11:00 bis 17:00 Uhr geöffnet.
+        </p>
+      </Prose>
+    </Col>
+    <Col lg={4} md={12} sm={12}>
+      <CDNImage
+        srcPath="vbkd-ausstellung-2024-in-seligenstadt/poster.jpg"
+        alt="Ein Klostergarten: VBKD-Ausstellung 2024 in Seligenstadt"
+        className="w-full h-auto object-contain"
+      />
+    </Col>
+  </Grid>
 </Col>
 
 <Col lg={12} md={12} sm={12}>
 
-<Heading as="h3" className="mt-12">Folgende VBKD-Mitglieder stellen in Seligenstadt aus</Heading>
+<Heading as="h3" className="mt-12">
+  Folgende VBKD-Mitglieder stellen in Seligenstadt aus
+</Heading>
 
 <Grid contained={false}>
   <Col lg={4} md={6} sm={12}>

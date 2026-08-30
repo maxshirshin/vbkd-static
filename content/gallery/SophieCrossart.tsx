@@ -45,8 +45,8 @@ export default function SophieCrossart() {
           <Prose className="text-sm md:text-sm">
             <p>
               <strong>
-                Sophie ist eine botanische Künstlerin und Illustratorin, die mit Aquarellfarben
-                auf Papier und
+                Sophie ist eine botanische Künstlerin und Illustratorin, die mit Aquarellfarben auf
+                Papier und
               </strong>
               <br />
               <strong>Pergament malt.</strong>
@@ -55,20 +55,19 @@ export default function SophieCrossart() {
               In unserem modernen digitalen Zeitalter ist das Malen der Natur ihre Art, ein Gefühl
               von Authentizität, Verbundenheit und Gewissheit im Leben zu bewahren. Im Mittelpunkt
               ihrer Arbeit steht ihre Faszination für komplizierte natürliche Details. Sie
-              beobachtet und isoliert diese sorgfältig in ihre Bilder, um die Erfüllung
-              einzufangen, die wir erfahren, wenn wir auf etwas scheinbar Unbedeutendes stoßen,
-              das sich aber als liebevoll schön herausstellt.
+              beobachtet und isoliert diese sorgfältig in ihre Bilder, um die Erfüllung einzufangen,
+              die wir erfahren, wenn wir auf etwas scheinbar Unbedeutendes stoßen, das sich aber als
+              liebevoll schön herausstellt.
             </p>
             <p>
               Indem sie die flüchtigen Qualitäten, die sie in der Natur findet, auf Kunstwerke
-              überträgt, möchtet Sophie sie zu eine bleibende Erfahrung und Quelle der
-              Vertrautheit und Inspiration machen. Indem sie ihre botanischen Motive gelegentlich
-              mit Gegenständen aus der Naturgeschichte kombiniert, erforscht sie die Beziehung der
+              überträgt, möchtet Sophie sie zu eine bleibende Erfahrung und Quelle der Vertrautheit
+              und Inspiration machen. Indem sie ihre botanischen Motive gelegentlich mit
+              Gegenständen aus der Naturgeschichte kombiniert, erforscht sie die Beziehung der
               Menschheit zu den größeren Themen Wandel und Zeit. Ihre eigene Interpretation von
-              „Memento Mori“ plädiert für die Erfahrung der Schönheit des Lebens statt der Angst
-              für Verlust. Momentan arbeitet Sie an eine Serie der die grandiose Strukturen des
-              Weltraum verbindet mit die Einzigartigkeit der irdische Natur — der Natur als Teil
-              des Alls.
+              „Memento Mori“ plädiert für die Erfahrung der Schönheit des Lebens statt der Angst für
+              Verlust. Momentan arbeitet Sie an eine Serie der die grandiose Strukturen des Weltraum
+              verbindet mit die Einzigartigkeit der irdische Natur — der Natur als Teil des Alls.
             </p>
             <p>
               Sophie studierte Kunstgeschichte in den Niederlanden und Deutschland und promovierte

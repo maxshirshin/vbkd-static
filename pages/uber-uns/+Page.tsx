@@ -24,9 +24,9 @@ function Page() {
           </p>
           <p>
             Wir förderen das Bewusstsein und das Verständnis für Botanische Kunst im Verein durch
-            Veranstaltungen und Ausstellungen. Wir schaffen für unsere Mitglieder Möglichkeiten, ihre
-            Kunstwerke einem breiten Publikum zu präsentieren. Weiterhin wollen wir die Techniken und
-            Fähigkeiten unserer Mitglieder durch Workshops und Austausch verbessern.
+            Veranstaltungen und Ausstellungen. Wir schaffen für unsere Mitglieder Möglichkeiten,
+            ihre Kunstwerke einem breiten Publikum zu präsentieren. Weiterhin wollen wir die
+            Techniken und Fähigkeiten unserer Mitglieder durch Workshops und Austausch verbessern.
           </p>
         </Prose>
       </Col>

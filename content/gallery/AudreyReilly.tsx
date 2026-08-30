@@ -54,8 +54,8 @@ export default function AudreyReilly() {
             <p>Kohlrabi (Brassica oleracea)</p>
             <p>
               <strong>
-                Audrey Reilly ist in Irland geboren und aufgewachsen. Heute lebt und arbeitet sie in der
-                Wedemark, nördlich von Hannover.
+                Audrey Reilly ist in Irland geboren und aufgewachsen. Heute lebt und arbeitet sie in
+                der Wedemark, nördlich von Hannover.
               </strong>
             </p>
             <p>
@@ -76,29 +76,32 @@ export default function AudreyReilly() {
             </p>
             <p>
               <i>
-                Als ich 2011 aufs Land zog, wendete ich mich in meiner Malerei mehr und mehr der Natur
-                zu. Mir fiel auf, dass Botanische Kunst in Deutschland so in Vergessenheit geraten war,
-                dass ich sie als zeitgenössische Kunstpraxis gar nicht kannte. Die Begegnung mit einer
-                Botanischen Künstlerin in Irland im Jahr 2018 weckte meine Neugier.
+                Als ich 2011 aufs Land zog, wendete ich mich in meiner Malerei mehr und mehr der
+                Natur zu. Mir fiel auf, dass Botanische Kunst in Deutschland so in Vergessenheit
+                geraten war, dass ich sie als zeitgenössische Kunstpraxis gar nicht kannte. Die
+                Begegnung mit einer Botanischen Künstlerin in Irland im Jahr 2018 weckte meine
+                Neugier.
               </i>
             </p>
             <p>
               <i>
-                Botanische Kunst erfüllt für mich alle für mich wichtigen Kriterien: Kunst, Geschichte,
-                Natur, Interesse an Wissenschaft, Biodiversität und Umweltbewusstsein vereinen sich auf
-                einem Blatt. Bis jetzt war es definitiv eine fruchtbare und lohnende Reise.
+                Botanische Kunst erfüllt für mich alle für mich wichtigen Kriterien: Kunst,
+                Geschichte, Natur, Interesse an Wissenschaft, Biodiversität und Umweltbewusstsein
+                vereinen sich auf einem Blatt. Bis jetzt war es definitiv eine fruchtbare und
+                lohnende Reise.
               </i>
             </p>
             <p>
               Im Jahr 2020 schloss Audrey Reilly das Certificate in Botanical Illustration am Royal
               Botanical Garden Edinburgh mit Auszeichnung ab. Danach wurde sie sofort in den
-              anspruchsvollen Online-Diplomkurs aufgenommen, mit dem sie bis März 2024 beschäftigt sein
-              wird.
+              anspruchsvollen Online-Diplomkurs aufgenommen, mit dem sie bis März 2024 beschäftigt
+              sein wird.
             </p>
             <p>
               Audrey ist Initiatorin und Vorstandsvorsitzende des Vereins für Botanische Kunst
-              Deutschland (VBKD). Sie ist auch Mitglied der Irish Society of Botanical Art (ISBA), der
-              American Society of Botanical Art (ASBA) und der Association of Botanical Artists (ABA).
+              Deutschland (VBKD). Sie ist auch Mitglied der Irish Society of Botanical Art (ISBA),
+              der American Society of Botanical Art (ASBA) und der Association of Botanical Artists
+              (ABA).
             </p>
           </Prose>
           <Prose className="text-sm md:text-sm">
@@ -120,6 +123,12 @@ export default function AudreyReilly() {
                 href="https://instagram.com/audrey.reilly"
               >
                 @audrey.reilly
+              </a>
+            </p>
+            <p>
+              Webseite:{' '}
+              <a className="text-primary" target="_blank" href="http://www.audreyreillyart.com/">
+                www.audreyreillyart.com
               </a>
             </p>
           </Prose>

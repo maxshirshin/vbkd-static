@@ -3,7 +3,6 @@ import { NavLink } from '@/components/NavLink'
 import { CDNImage } from '@/components/ui/CDNImage'
 
 const navigation = [
-  { label: 'Startseite', href: '/' },
   { label: 'Galerie', href: '/mitglieder' },
   { label: 'News', href: '/news' },
   { label: 'Workshops & Shows', href: '/workshops-and-shows' },
@@ -18,7 +17,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm h-[80px]">
       <div className="container max-w-[var(--container-max)] mx-auto px-6 flex items-center justify-between h-full">
-        <a href="/" className="flex items-center gap-3 leading-tight hover:opacity-80 transition-opacity">
+        <a
+          href="/"
+          className="flex items-center gap-3 leading-tight hover:opacity-80 transition-opacity !no-underline"
+        >
           <CDNImage
             srcPath="logo.png"
             alt="VBKD Vereinslogo"
@@ -77,7 +79,7 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="block text-sm tracking-wide uppercase text-text-muted hover:text-primary transition-colors"
+              className="block text-sm tracking-wide uppercase text-text-muted hover:text-primary transition-colors !no-underline"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}

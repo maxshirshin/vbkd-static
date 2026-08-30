@@ -44,7 +44,9 @@ export default function InesKamper() {
         <Col lg={8} md={12} sm={12}>
           <Prose className="text-sm md:text-sm">
             <p>
-              <strong>Ines Kamper ist eine Malerin und Illustratorin aus Norddeutschland. Sie</strong>
+              <strong>
+                Ines Kamper ist eine Malerin und Illustratorin aus Norddeutschland. Sie
+              </strong>
               <br />
               <strong>lebt mit ihrer Familie in der Nähe von Hamburg.</strong>
             </p>
@@ -62,8 +64,8 @@ export default function InesKamper() {
               Nach ihrer Ausbildung und ihrem Studium zum Ingenieur für Keramik, verbrachte sie
               einige Zeit im Ausland, in Großbritannien. Zurück in Norddeutschland arbeitete sie
               dann in der Werbung. Auf ihren vielen Reisen rund um die Welt, entdeckte sie ihre
-              Liebe zur Natur und zur Kunst wieder. Sie nahm Zeichenunterricht und an Workshops
-              für Botanical
+              Liebe zur Natur und zur Kunst wieder. Sie nahm Zeichenunterricht und an Workshops für
+              Botanical
               <br />
               Illustration teil, unter anderem bei Jessica Sheperd in London und Elaine Searle in
               Italien. Nach 2 jähriger Ausbildung (Distance Diploma Course) bei der Society of

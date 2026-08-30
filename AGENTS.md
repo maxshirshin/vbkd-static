@@ -18,19 +18,19 @@ Storage / Edge CDN (not Netlify).
 
 ## 2. Tech Stack
 
-| Layer              | Technology              | Version / Notes                                   |
-| ------------------- | ------------------------ | --------------------------------------------------- |
-| Framework          | React                   | 19.x                                                |
-| Language           | TypeScript              | ~5.9                                                |
-| Build tool         | Vite                    | 7.x                                                 |
-| SSR / SSG          | Vike                    | Pre-rendered (SSG) by default                       |
-| Styling            | Tailwind CSS            | v4 (via `@tailwindcss/vite`)                        |
-| MDX pages          | MDX                     | `@mdx-js/rollup` with remark-frontmatter (static legal/info pages only, no blog) |
-| Gallery lightbox   | react-photoswipe-gallery / photoswipe | Full-size image viewer for member galleries |
-| Image hosting      | GCore Object Storage    | S3-compatible; images served via CDN URL, no on-the-fly transforms |
-| Hosting            | GCore Object Storage + Edge CDN | Static deploy via custom S3-compatible upload script |
-| Deploy tooling     | `@aws-sdk/client-s3`    | Used in `scripts/deploy-gcore.mjs` to push `dist/client/` and `images/` to GCore |
-| Package manager    | npm                     | lockfile committed                                  |
+| Layer            | Technology                            | Version / Notes                                                                  |
+| ---------------- | ------------------------------------- | -------------------------------------------------------------------------------- |
+| Framework        | React                                 | 19.x                                                                             |
+| Language         | TypeScript                            | ~5.9                                                                             |
+| Build tool       | Vite                                  | 7.x                                                                              |
+| SSR / SSG        | Vike                                  | Pre-rendered (SSG) by default                                                    |
+| Styling          | Tailwind CSS                          | v4 (via `@tailwindcss/vite`)                                                     |
+| MDX pages        | MDX                                   | `@mdx-js/rollup` with remark-frontmatter (static legal/info pages only, no blog) |
+| Gallery lightbox | react-photoswipe-gallery / photoswipe | Full-size image viewer for member galleries                                      |
+| Image hosting    | GCore Object Storage                  | S3-compatible; images served via CDN URL, no on-the-fly transforms               |
+| Hosting          | GCore Object Storage + Edge CDN       | Static deploy via custom S3-compatible upload script                             |
+| Deploy tooling   | `@aws-sdk/client-s3`                  | Used in `scripts/deploy-gcore.mjs` to push `dist/client/` and `images/` to GCore |
+| Package manager  | npm                                   | lockfile committed                                                               |
 
 There is **no Netlify, no Mux video, no shop, and no blog** in this project —
 those belonged to an earlier, unrelated template and do not apply here.
@@ -271,9 +271,9 @@ form).
 `scripts/` contains a couple of small utilities (run directly with `node
 scripts/<name>.mjs`, not wired into `package.json`):
 
-| Script               | Purpose                                                                 |
-| --------------------- | ------------------------------------------------------------------------ |
-| `deploy-gcore.mjs`    | Uploads `dist/client/` + `images/` to GCore Object Storage (`npm run deploy`) |
+| Script                | Purpose                                                                                                                                             |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `deploy-gcore.mjs`    | Uploads `dist/client/` + `images/` to GCore Object Storage (`npm run deploy`)                                                                       |
 | `download-assets.mjs` | Generic downloader: takes a JSON manifest of `{ url, dest }` pairs and saves files under `images/`. Useful for fetching any future image/PDF assets |
 
 The one-off scraping scripts and raw scraped source data used to migrate
@@ -325,14 +325,14 @@ should be updated to VBKD-appropriate copy.
 
 ## 12. Development Workflow
 
-| Command              | What it does                                                     |
-| --------------------- | -------------------------------------------------------------------- |
-| `npm run dev`         | Starts Vite dev server (default `localhost:5173`)                 |
-| `npm run build`       | Type-check (`tsc -b`) + `vike build` (SSG pre-render all pages)   |
-| `npm run preview`     | Preview the production build locally (`vite preview`)             |
-| `npm run lint`        | Run ESLint                                                        |
-| `npm run format`      | Run Prettier over `**/*.{ts,tsx,css,json,md,mdx}`                 |
-| `npm run deploy`      | Upload `dist/client/` + `images/` to GCore Object Storage          |
+| Command           | What it does                                                    |
+| ----------------- | --------------------------------------------------------------- |
+| `npm run dev`     | Starts Vite dev server (default `localhost:5173`)               |
+| `npm run build`   | Type-check (`tsc -b`) + `vike build` (SSG pre-render all pages) |
+| `npm run preview` | Preview the production build locally (`vite preview`)           |
+| `npm run lint`    | Run ESLint                                                      |
+| `npm run format`  | Run Prettier over `**/*.{ts,tsx,css,json,md,mdx}`               |
+| `npm run deploy`  | Upload `dist/client/` + `images/` to GCore Object Storage       |
 
 ESLint is configured with `eslint-plugin-react-hooks`,
 `eslint-plugin-react-refresh`, and `eslint-plugin-prettier`/
@@ -370,16 +370,16 @@ page) and `/vbkd-2023-archived/` / `/online2025/` (excluded per instruction —
 the latter's images lived on an external GitHub Pages repo, not the old site
 itself).
 
-| Area                       | Status                                                                 |
-| --------------------------- | ------------------------------------------------------------------------ |
-| Page shells & routing      | ✅ Complete — home, uber-uns, mitglieder (+ per-member), news, mitgliedschaft, kontakt, impressum, datenschutz |
-| About / Home / Membership content | ✅ Real VBKD copy (German + English)                            |
-| Layout (Header/Footer)     | ✅ Complete — responsive, mobile menu, nav links incl. Workshops & Shows |
-| Member galleries           | ✅ 8 members registered in `src/data/galleries.ts`, images via GCore CDN |
-| News page                  | ✅ MDX card grid (`pages/news/+Page.mdx`), all known entries migrated  |
-| Workshops & Shows          | ✅ Index + 4 regional pages + 1 online workshop, all MDX               |
-| Exhibition/history pages   | ✅ Gründungs-Ausstellung, Seligenstadt 2024, Bettina Bücker, BAW 2025, WOC 2026 Orchids + CV list |
-| Contact form               | ⚠️ `action=""` left blank intentionally — needs a backend integration  |
-| `pages/+Head.tsx`          | ⚠️ Stale placeholder copy from an earlier template — needs updating     |
-| GCore Object Storage/CDN   | ✅ Deploy script (`scripts/deploy-gcore.mjs`) configured and working    |
-| shadcn/ui, Mux, blog, shop | ❌ Not part of this project                                             |
+| Area                              | Status                                                                                                         |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Page shells & routing             | ✅ Complete — home, uber-uns, mitglieder (+ per-member), news, mitgliedschaft, kontakt, impressum, datenschutz |
+| About / Home / Membership content | ✅ Real VBKD copy (German + English)                                                                           |
+| Layout (Header/Footer)            | ✅ Complete — responsive, mobile menu, nav links incl. Workshops & Shows                                       |
+| Member galleries                  | ✅ 8 members registered in `src/data/galleries.ts`, images via GCore CDN                                       |
+| News page                         | ✅ MDX card grid (`pages/news/+Page.mdx`), all known entries migrated                                          |
+| Workshops & Shows                 | ✅ Index + 4 regional pages + 1 online workshop, all MDX                                                       |
+| Exhibition/history pages          | ✅ Gründungs-Ausstellung, Seligenstadt 2024, Bettina Bücker, BAW 2025, WOC 2026 Orchids + CV list              |
+| Contact form                      | ⚠️ `action=""` left blank intentionally — needs a backend integration                                          |
+| `pages/+Head.tsx`                 | ⚠️ Stale placeholder copy from an earlier template — needs updating                                            |
+| GCore Object Storage/CDN          | ✅ Deploy script (`scripts/deploy-gcore.mjs`) configured and working                                           |
+| shadcn/ui, Mux, blog, shop        | ❌ Not part of this project                                                                                    |
