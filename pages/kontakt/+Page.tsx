@@ -49,7 +49,7 @@ function Page() {
 
       <Col lg={7} md={12} sm={12}>
         {/* Form has no backend yet; action left blank pending integration */}
-        <form action="" method="POST" className="space-y-6">
+        <form action="https://forms.formward.eu/f/330c9662-a332-48fe-b4b1-b0cec2def1cc" method="POST" className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-1">
               Name
@@ -87,6 +87,8 @@ function Page() {
               className="w-full px-4 py-2 border border-border bg-surface rounded focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
+
+          <input type="text" name="_gotcha" style={{display:"none"}} tabIndex={-1} />
 
           <div className="flex items-start gap-3">
             <input

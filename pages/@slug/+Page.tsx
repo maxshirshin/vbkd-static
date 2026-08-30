@@ -14,11 +14,11 @@ function Page() {
     return (
       <Grid>
         <Col lg={12} md={12} sm={12} className="text-center">
-          <Heading as="h1">Mitglied nicht gefunden</Heading>
+          <Heading as="h1">Seite nicht gefunden</Heading>
           <p className="text-text-muted">
-            Dieses Mitglied wurde nicht gefunden.{' '}
-            <a href="/mitglieder" className="text-accent hover:text-accent-dark">
-              Zurück zur Galerie →
+            Die angeforderte Seite wurde nicht gefunden.{' '}
+            <a href="/" className="text-accent hover:text-accent-dark">
+              Zurück zur Startseite →
             </a>
           </p>
         </Col>
