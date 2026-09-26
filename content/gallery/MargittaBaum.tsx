@@ -76,15 +76,36 @@ export default function MargittaBaum() {
             <p>
               <strong>Künstlerische Vita:</strong>
               <ul className="list-disc list-inside space-y-2">
-                <li>in früher Jugend Malen und Zeichnen bei Richard Sander / Maler und Bildweber (siehe Wikibedia)</li>
-                <li>später, erlernen und ausführen zahlreicher textiler Techniken, wie z.B. Klöppeln, verschiedene Sticktechniken,
-              Batik, Textildruck, Filzen</li>
-                <li>seit 10 Jahren (etwa ab 2016 ) wieder intensive Beschäftigung mit dem Zeichnen und Malen</li>
-                <li>Besuch von zahlreichen Kursen in der VHS Ludwigshafen und bei Armin Liebscher/VBK Mannheim</li>
-                <li>es folgten autodidaktische Versuche in der botanischen Illustration, angeregt durch ein Buch von Billy Showell und ein Abo in der Onlineschule dieser wunderbaren Künstlerin zur Vertiefung der Kenntnisse und Fertigkeiten</li>
-                <li>Besuch mehrere Wochenend-Workshops bei Katja Katholing-Bloss und Teilnahme an einem Skizzenbuch Projekt</li>
+                <li>
+                  in früher Jugend Malen und Zeichnen bei Richard Sander / Maler und Bildweber
+                  (siehe Wikibedia)
+                </li>
+                <li>
+                  später, erlernen und ausführen zahlreicher textiler Techniken, wie z.B. Klöppeln,
+                  verschiedene Sticktechniken, Batik, Textildruck, Filzen
+                </li>
+                <li>
+                  seit 10 Jahren (etwa ab 2016 ) wieder intensive Beschäftigung mit dem Zeichnen und
+                  Malen
+                </li>
+                <li>
+                  Besuch von zahlreichen Kursen in der VHS Ludwigshafen und bei Armin Liebscher/VBK
+                  Mannheim
+                </li>
+                <li>
+                  es folgten autodidaktische Versuche in der botanischen Illustration, angeregt
+                  durch ein Buch von Billy Showell und ein Abo in der Onlineschule dieser
+                  wunderbaren Künstlerin zur Vertiefung der Kenntnisse und Fertigkeiten
+                </li>
+                <li>
+                  Besuch mehrere Wochenend-Workshops bei Katja Katholing-Bloss und Teilnahme an
+                  einem Skizzenbuch Projekt
+                </li>
                 <li>Online und Direktkurse in der VHS Mannheim bei Sofie Crossart</li>
-                <li>2026 erfolgreicher Abschluss des 2 ½ jährigen Distance Learning Diploma Course bei der SBA/England</li>
+                <li>
+                  2026 erfolgreicher Abschluss des 2 ½ jährigen Distance Learning Diploma Course bei
+                  der SBA/England
+                </li>
               </ul>
             </p>
             <p>
@@ -95,8 +116,8 @@ export default function MargittaBaum() {
               Blätter, Kompositionen,
             </p>
             <p>
-              <strong>Anspruch:</strong> Genauigkeit in Farbe, Größe, Form, präzise Darstellung
-              der botanischen Merkmale
+              <strong>Anspruch:</strong> Genauigkeit in Farbe, Größe, Form, präzise Darstellung der
+              botanischen Merkmale
             </p>
             <p>
               <strong>Mitgliedschaft:</strong> „Verein Botanische Kunst Deutschland“ seit 2023
@@ -120,8 +141,8 @@ export default function MargittaBaum() {
                 </li>
                 <li>2025 ein Werk in die Onlineausstellung „Gefährdete Arten“</li>
                 <li>
-                  2026 zwei Bilder in der Ausstellung „Orchids Orchids Orchids“ anlässlich der
-                  24th World of Orchid Conference in Dresden.
+                  2026 zwei Bilder in der Ausstellung „Orchids Orchids Orchids“ anlässlich der 24th
+                  World of Orchid Conference in Dresden.
                 </li>
               </ul>
             </div>
