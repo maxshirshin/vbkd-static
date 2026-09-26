@@ -9,6 +9,7 @@ import KatjaKatholingBloss from '../../content/gallery/KatjaKatholingBloss'
 import SophieCrossart from '../../content/gallery/SophieCrossart'
 import InesKamper from '../../content/gallery/InesKamper'
 import MargittaBaum from '../../content/gallery/MargittaBaum'
+import BettinaBuecker from '../../content/gallery/BettinaBuecker'
 
 export interface Gallery {
   slug: string
@@ -75,5 +76,12 @@ export const galleries: Gallery[] = [
     Component: MargittaBaum,
     coverImage: 'gallery/margitta-baum/cattleya-golden-boy-preview.jpg',
     description: 'Botanische Kunst von Margitta Baum, VBKD Premium Mitglied',
+  },
+  {
+    slug: 'bettina-buecker',
+    title: 'Bettina Bücker',
+    Component: BettinaBuecker,
+    coverImage: 'gallery/bettina-buecker/daucus-carota-preview.webp',
+    description: 'Botanische Kunst von Bettina Bücker, VBKD Premium Mitglied',
   },
 ]
