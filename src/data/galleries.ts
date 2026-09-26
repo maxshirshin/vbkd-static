@@ -8,6 +8,7 @@ import DrSabineLoos from '../../content/gallery/DrSabineLoos'
 import KatjaKatholingBloss from '../../content/gallery/KatjaKatholingBloss'
 import SophieCrossart from '../../content/gallery/SophieCrossart'
 import InesKamper from '../../content/gallery/InesKamper'
+import MargittaBaum from '../../content/gallery/MargittaBaum'
 
 export interface Gallery {
   slug: string
@@ -67,5 +68,12 @@ export const galleries: Gallery[] = [
     Component: InesKamper,
     coverImage: 'gallery/ines-kamper/image-1.jpg',
     description: 'Botanische Kunst von Ines Kamper',
+  },
+  {
+    slug: 'margitta-baum',
+    title: 'Margitta Baum',
+    Component: MargittaBaum,
+    coverImage: 'gallery/margitta-baum/cattleya-golden-boy-preview.jpg',
+    description: 'Botanische Kunst von Margitta Baum, VBKD Premium Mitglied',
   },
 ]

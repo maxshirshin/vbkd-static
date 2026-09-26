@@ -1,6 +1,7 @@
 import 'photoswipe/dist/photoswipe.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
 import { CDNImage } from '@/components/ui/CDNImage'
+import { cdnFileUrl } from '@/lib/cdn'
 
 export function GalleryLightboxItem({
   localPreview,
@@ -15,8 +16,7 @@ export function GalleryLightboxItem({
   width?: number
   height?: number
 }) {
-  const CDN_URL = (import.meta.env.VITE_CDN_URL as string) || ''
-  const fullUrl = localFull ? `${CDN_URL}/images/${localFull}` : `${CDN_URL}/images/${localPreview}`
+  const fullUrl = cdnFileUrl(localFull ? localFull : localPreview)
 
   return (
     <Item
@@ -26,7 +26,7 @@ export function GalleryLightboxItem({
         </div>
       }
       original={fullUrl}
-      thumbnail={`${CDN_URL}/images/${localPreview}`}
+      thumbnail={cdnFileUrl(localPreview)}
       alt={alt}
       caption={title}
     >
