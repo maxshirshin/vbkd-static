@@ -56,8 +56,8 @@ export default function BettinaBuecker() {
               Die Leidenschaft für Botanische Kunst hat sie erst in den letzten Jahren entdeckt.
             </p>
             <p>
-              Ganz norddeutsch, mit viel Weite in der Landschaft und viel Liebe zur Natur, bin ich in
-              der Nähe von Bremen aufgewachsen.
+              Ganz norddeutsch, mit viel Weite in der Landschaft und viel Liebe zur Natur, bin ich
+              in der Nähe von Bremen aufgewachsen.
               <br />
               Nach einem Grafik-Design Studium führte mein Weg mich nach Hamburg. Eine langjährige
               Tätigkeit in Design-Agenturen förderte und vertiefte die Auseinandersetzung mit der
@@ -65,9 +65,9 @@ export default function BettinaBuecker() {
               <br />
               Erst im Jahre 2020 entdeckte ich die Botanische Kunst für mich.
               <br />
-              Eine 2 1/2 jährige Ausbildung der 'Society of Botanical Artists‘ SBA, GB, dem ‚Distance
-              Learning Diploma Course‘ folgte und wurde erfolgreich mit Auszeichnung und ‚Award for
-              Excellence‘ abgeschlossen.
+              Eine 2 1/2 jährige Ausbildung der 'Society of Botanical Artists‘ SBA, GB, dem
+              ‚Distance Learning Diploma Course‘ folgte und wurde erfolgreich mit Auszeichnung und
+              ‚Award for Excellence‘ abgeschlossen.
             </p>
             <p>
               Seitdem steht die Arbeit als Botanische Künstlerin im Vordergrund.

@@ -13,7 +13,8 @@ type GridTile = {
 
 const welcomeTile: GridTile = {
   title: 'Willkommen bei VBKD',
-  description: 'Wir sind eine Gruppe von pflanzenbegeisterten Künstlern und Illustratoren. Wir möchten viele Menschen für die botanische Kunst begeistern und sie ermutigen sich uns anzuschließen. Professionelle und semiprofessionelle Künstler, Anfänger, Förderer und Naturinteressierte genießen die Vorteile einer Mitgliedschaft und unterstützen botanische Kunst in ganz Deutschland.',
+  description:
+    'Wir sind eine Gruppe von pflanzenbegeisterten Künstlern und Illustratoren. Wir möchten viele Menschen für die botanische Kunst begeistern und sie ermutigen sich uns anzuschließen. Professionelle und semiprofessionelle Künstler, Anfänger, Förderer und Naturinteressierte genießen die Vorteile einer Mitgliedschaft und unterstützen botanische Kunst in ganz Deutschland.',
   href: '/uber-uns',
   images: [
     'tile-backgrounds/gallery/audrey-reilly/image-1.jpg',
@@ -43,13 +44,15 @@ const galerieTile: GridTile = {
 
 const mitgliedschaftTile: GridTile = {
   title: 'Mitgliedschaft',
-  description: 'Informieren Sie sich über die Vorteile einer Mitgliedschaft und wie Sie sich einbinden können.',
+  description:
+    'Informieren Sie sich über die Vorteile einer Mitgliedschaft und wie Sie sich einbinden können.',
   href: '/mitgliedschaft',
   images: [
     'tile-backgrounds/gallery/maxim-shirshin/image-3.jpg',
     'tile-backgrounds/gallery/ines-kamper/image-3.jpg',
   ],
-  tileClassName: 'col-span-1 md:row-start-3 md:row-span-2 lg:col-start-4 lg:row-start-1 lg:row-span-2',
+  tileClassName:
+    'col-span-1 md:row-start-3 md:row-span-2 lg:col-start-4 lg:row-start-1 lg:row-span-2',
   animationDelay: 9000,
 }
 
@@ -64,7 +67,8 @@ const journalTile: GridTile = {
 
 const newsTile: GridTile = {
   title: 'News',
-  description: 'Bleiben Sie über Ausstellungen, Veröffentlichungen und Neuigkeiten des Vereins informiert.',
+  description:
+    'Bleiben Sie über Ausstellungen, Veröffentlichungen und Neuigkeiten des Vereins informiert.',
   href: '/news',
   images: [
     'tile-backgrounds/gallery/ines-kamper/image-1.jpg',
@@ -88,7 +92,8 @@ const workshopsTile: GridTile = {
 
 const aboutTile: GridTile = {
   title: 'Über uns',
-  description: 'Erfahren Sie mehr über den Verein, seine Mitglieder und die gemeinsame Leidenschaft für botanische Kunst.',
+  description:
+    'Erfahren Sie mehr über den Verein, seine Mitglieder und die gemeinsame Leidenschaft für botanische Kunst.',
   href: '/uber-uns',
   images: [
     'tile-backgrounds/gallery/sophie-crossart/image-2.jpg',

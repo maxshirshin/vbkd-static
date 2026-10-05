@@ -57,7 +57,9 @@ export function Tile({
             }`}
             style={{
               backgroundImage: `url(${cdnFileUrl(image)})`,
-              transition: shouldAnimate ? `opacity ${IMAGE_FADE_DURATION_MS}ms ease-in-out, filter 300ms ease` : 'filter 300ms ease',
+              transition: shouldAnimate
+                ? `opacity ${IMAGE_FADE_DURATION_MS}ms ease-in-out, filter 300ms ease`
+                : 'filter 300ms ease',
               opacity: isActive ? 1 : 0,
               filter: isHovered ? 'brightness(1.2) saturate(0.33)' : 'brightness(1) saturate(1)',
             }}
