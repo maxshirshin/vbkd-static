@@ -80,3 +80,31 @@ a {
 a:hover {
   color: var(--color-accent);
 }
+
+.tile-background-layer {
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+  will-change: opacity;
+}
+
+.tile-background-layer--active {
+  opacity: 1;
+}
+
+.tile-background-layer--hidden {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tile-background-layer {
+    transition: none;
+  }
+
+  .tile-background-layer--active {
+    opacity: 1;
+  }
+
+  .tile-background-layer--hidden {
+    opacity: 0;
+  }
+}
