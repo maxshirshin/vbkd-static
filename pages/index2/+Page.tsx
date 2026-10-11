@@ -19,6 +19,9 @@ const welcomeTile: GridTile = {
   images: [
     'tile-backgrounds/gallery/audrey-reilly/image-1.jpg',
     'tile-backgrounds/gallery/bettina-buecker/daucus-carota-preview.webp',
+    'tile-backgrounds/archive/White-and-pink-orchid.jpeg',
+    'tile-backgrounds/archive/IMG_7931.jpeg',
+    'tile-backgrounds/archive/YPettersSummer.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2',
   animationDelay: 10000,
@@ -37,6 +40,9 @@ const galerieTile: GridTile = {
     'tile-backgrounds/gallery/katja-katholing-bloss/image-2.jpg',
     'tile-backgrounds/gallery/maxim-shirshin/image-2.jpg',
     'tile-backgrounds/gallery/sue-henon/image-2.jpg',
+    'tile-backgrounds/archive/IMG_7966.jpeg',
+    'tile-backgrounds/archive/YPettersTeasel.jpeg',
+    'tile-backgrounds/archive/IMG_20240123_115800_711.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-3 md:row-span-2 lg:col-start-3 lg:row-span-2',
   animationDelay: 3000,
@@ -50,6 +56,8 @@ const mitgliedschaftTile: GridTile = {
   images: [
     'tile-backgrounds/gallery/maxim-shirshin/image-3.jpg',
     'tile-backgrounds/gallery/ines-kamper/image-3.jpg',
+    'tile-backgrounds/archive/IMG_20240123_122015_490.jpeg',
+    'tile-backgrounds/archive/Picea-abies.jpeg',
   ],
   tileClassName:
     'col-span-1 md:row-start-3 md:row-span-2 lg:col-start-4 lg:row-start-1 lg:row-span-2',
@@ -60,7 +68,11 @@ const journalTile: GridTile = {
   title: 'Journal',
   description: 'VBKD Journal Nr. 13, August 2026',
   href: '/news',
-  images: ['tile-backgrounds/news/journal-13.jpg'],
+  images: [
+    'tile-backgrounds/news/journal-13.jpg',
+    'tile-backgrounds/archive/IMG_20231124_180527.jpeg',
+    'tile-backgrounds/archive/Herbstkranz.jpeg',
+  ],
   tileClassName: 'col-span-1 md:col-start-2 md:row-start-3 lg:col-start-1 lg:row-start-3',
   animationDelay: 6000,
 }
@@ -73,6 +85,8 @@ const newsTile: GridTile = {
   images: [
     'tile-backgrounds/gallery/ines-kamper/image-1.jpg',
     'tile-backgrounds/gallery/dr-sabine-loos/image-1.jpg',
+    'tile-backgrounds/archive/GOSSIP_Maria-Euthum.jpeg',
+    'tile-backgrounds/archive/IMG_20240123_120011.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-3 md:row-start-3 lg:col-start-2 lg:row-start-3',
   animationDelay: 8200,
@@ -85,6 +99,9 @@ const workshopsTile: GridTile = {
   images: [
     'tile-backgrounds/gallery/margitta-baum/fruehlingsblumen-preview.jpg',
     'tile-backgrounds/gallery/dr-sabine-loos/image-2.jpg',
+    'tile-backgrounds/archive/YPettersBluebell.jpeg',
+    'tile-backgrounds/archive/20230722_163356.jpeg',
+    'tile-backgrounds/archive/Hyazinthen.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-2 md:row-start-4 lg:col-start-3 lg:row-start-3',
   animationDelay: 10000,
@@ -98,6 +115,8 @@ const aboutTile: GridTile = {
   images: [
     'tile-backgrounds/gallery/sophie-crossart/image-2.jpg',
     'tile-backgrounds/gallery/margitta-baum/cattleya-golden-boy-preview.jpg',
+    'tile-backgrounds/archive/20230722_174047.jpeg',
+    'tile-backgrounds/archive/20230722_164041.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-3 md:row-start-4 lg:col-start-4 lg:row-start-3',
   animationDelay: 6200,
@@ -110,6 +129,8 @@ const contactTile: GridTile = {
   images: [
     'tile-backgrounds/gallery/katja-katholing-bloss/image-1.jpg',
     'tile-backgrounds/gallery/audrey-reilly/image-2.jpg',
+    'tile-backgrounds/archive/IMG-20211015-WA0000.jpeg',
+    'tile-backgrounds/archive/Kastanienzweige-im-Fruehjahr.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-span-2 md:row-start-5 lg:col-span-2 lg:row-start-4',
   animationDelay: 6600,
