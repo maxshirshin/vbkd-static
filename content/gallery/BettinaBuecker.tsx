@@ -35,6 +35,20 @@ export default function BettinaBuecker() {
             <p>Rosa rugosa</p>
           </Prose>
         </Col>
+
+        <Col>
+          <GalleryLightboxItem
+            localPreview="gallery/bettina-buecker/bettina-buecker-cimicifuga-racemosa-preview.jpg"
+            localFull="gallery/bettina-buecker/bettina-buecker-cimicifuga-racemosa-full.jpg"
+            alt="Botanische Illustration von Cimicifuga racemosa von Bettina Bücker"
+            title="Cimicifuga racemosa"
+            width={3153}
+            height={4134}
+          />
+          <Prose className="text-sm">
+            <p>Cimicifuga racemosa</p>
+          </Prose>
+        </Col>
       </Grid>
 
       <Grid contained={false} className="mt-16">
