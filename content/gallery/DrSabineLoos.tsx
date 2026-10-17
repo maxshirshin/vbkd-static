@@ -1,6 +1,7 @@
 import { Prose } from '@/components/ui/Prose'
 import { GalleryLightboxWrapper, GalleryLightboxItem } from '@/components/ui/GalleryLightbox'
 import { Grid, Col } from '@/components/ui/Layout'
+import { Quote } from '@/components/ui/Quote'
 
 export default function DrSabineLoos() {
   return (
@@ -64,52 +65,34 @@ export default function DrSabineLoos() {
                 Botanische Kunst.
               </strong>
             </p>
-            <p>
-              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
-                Ich studierte Biologie an der altehrwürdigen Friedrich-Schiller-Universität in Jena
-                und an der ETH Zürich und promovierte in meinem Hauptfach Mikrobiologie über
-                Sekundärmetaboliten in filamentösen Pilzen.
-              </i>
-            </p>
-            <p>
-              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
-                Mein Nebenfach Botanik faszinierte mich ebenfalls. Besonders die Pharmakologie
-                natürlicher pflanzlicher Sekundärmetabolite zog mich in ihren Bann. Als ich einen
-                Anfängerkurs für Botanische Illustration bei Katja Katholing-Bloss belegte, fühlte
-                es sich an, wie nach Hause zu kommen. Etwas Magisches passierte in mir an diesem Tag
-                und ich wusste, dass Botanische Illustrationen mit meiner Zukunft verbunden sein
-                würden. Botanische Kunst und Illustrationen verbinden meinen Kopf mit meinem Herzen.
-                Es gibt nichts Schöneres für mich, als mit den Beinen zu baumeln und über den
-                Blütenbau eines Doldenblütlers nachzudenken. Mit dem Pinsel in der Hand bin ich
-                glücklich. Ich bin davon überzeugt, dass in jedem Menschen ein Künstler schlummert,
-                den man einfach aufwecken muss.
-              </i>
-            </p>
-            <p>
-              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
-                Nach vielen Stunden des Selbststudiums und Online-Kursen, die mir viel Freude
-                bereiteten, beschloss ich, meine künstlerischen Fähigkeiten weiter zu vertiefen.
-                &nbsp;Seitdem studiere ich Botanische Illustration im Diplomstudiengang am Royal
-                Botanical Garden Edinburgh. Den werde ich 2024 abschließen. Mein Herzensanliegen ist
-                es, die historischen Wurzeln der Botanischen Illustration in Deutschland wieder zu
-                beleben und die Botanische Kunst in Deutschland wieder aufblühen zu lassen.
-              </i>
-            </p>
-            <p>
-              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
-                Herzliche Grüße
-              </i>
-            </p>
-            <p>
-              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
-                Aus dem Botanischen Atelier unter dem Schlosshain
-              </i>
-            </p>
-            <p>
-              <i className="text-primary-dark block my-4 border-l-2 pl-4 border-primary">
-                Eure Sabine
-              </i>
-            </p>
+            <Quote>
+              Ich studierte Biologie an der altehrwürdigen Friedrich-Schiller-Universität in Jena
+              und an der ETH Zürich und promovierte in meinem Hauptfach Mikrobiologie über
+              Sekundärmetaboliten in filamentösen Pilzen.
+            </Quote>
+            <Quote>
+              Mein Nebenfach Botanik faszinierte mich ebenfalls. Besonders die Pharmakologie
+              natürlicher pflanzlicher Sekundärmetabolite zog mich in ihren Bann. Als ich einen
+              Anfängerkurs für Botanische Illustration bei Katja Katholing-Bloss belegte, fühlte es
+              sich an, wie nach Hause zu kommen. Etwas Magisches passierte in mir an diesem Tag und
+              ich wusste, dass Botanische Illustrationen mit meiner Zukunft verbunden sein würden.
+              Botanische Kunst und Illustrationen verbinden meinen Kopf mit meinem Herzen. Es gibt
+              nichts Schöneres für mich, als mit den Beinen zu baumeln und über den Blütenbau eines
+              Doldenblütlers nachzudenken. Mit dem Pinsel in der Hand bin ich glücklich. Ich bin
+              davon überzeugt, dass in jedem Menschen ein Künstler schlummert, den man einfach
+              aufwecken muss.
+            </Quote>
+            <Quote>
+              Nach vielen Stunden des Selbststudiums und Online-Kursen, die mir viel Freude
+              bereiteten, beschloss ich, meine künstlerischen Fähigkeiten weiter zu vertiefen.
+              &nbsp;Seitdem studiere ich Botanische Illustration im Diplomstudiengang am Royal
+              Botanical Garden Edinburgh. Den werde ich 2024 abschließen. Mein Herzensanliegen ist
+              es, die historischen Wurzeln der Botanischen Illustration in Deutschland wieder zu
+              beleben und die Botanische Kunst in Deutschland wieder aufblühen zu lassen.
+            </Quote>
+            <Quote>Herzliche Grüße</Quote>
+            <Quote>Aus dem Botanischen Atelier unter dem Schlosshain</Quote>
+            <Quote>Eure Sabine</Quote>
           </Prose>
           <Prose className="text-sm md:text-sm">
             <p>

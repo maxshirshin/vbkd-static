@@ -53,7 +53,7 @@ export default function MargittaBaum() {
       <Grid contained={false} className="mt-16">
         <Col lg={12} md={12} sm={12}>
           <Prose className="text-base">
-            <Heading>Margitta Baum (VBKD Premium Mitglied)</Heading>
+            <Heading>Margitta Baum, VBKD Premium Mitglied</Heading>
             <p>geb.11.11.1953 in Dresden, wohnhaft in Dresden</p>
             <p>
               E-mail :{' '}
@@ -62,90 +62,30 @@ export default function MargittaBaum() {
               </a>
             </p>
             <p>
-              <strong>Berufsausbildung:</strong> Gebrauchswerber / Siebdrucker
+              Meine künstlerische Arbeit verbindet eine langjährige Auseinandersetzung mit textilen
+              Techniken und Materialien mit meiner heutigen Leidenschaft für die botanische
+              Illustration. Nach einer frühen Förderung im Malen und Zeichnen durch den Maler und
+              Bildweber Richard Sander sowie Ausbildungen im gestalterischen und textilen Bereich
+              widme ich mich seit etwa 2016 wieder intensiv der Malerei und dem Zeichnen.
             </p>
             <p>
-              <strong>Zusätzliche Ausbildungen und Kurse:</strong>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Spezialschule für künstlerische Textilgestaltung</li>
-                <li>Teilabschluss / Schneiderin</li>
-                <li>Schnittkonstruktion mit Zertifikat</li>
-                <li>Hutmacherkurs mit Zertifikat in der Schweiz</li>
-              </ul>
+              Im Mittelpunkt meiner Arbeit stehen Pflanzenporträts, Einzelblüten und Blätter sowie
+              botanisch inspirierte Kompositionen. Mit Aquarell, Graphit und Farbstiften versuche
+              ich, die charakteristischen Merkmale meiner Motive möglichst präzise und naturgetreu
+              wiederzugeben. Dabei interessieren mich besonders das Zusammenspiel von Farbe, Form
+              und Größe sowie die feinen Strukturen und individuellen Besonderheiten jeder Pflanze.
             </p>
             <p>
-              <strong>Künstlerische Vita:</strong>
-              <ul className="list-disc list-inside space-y-2">
-                <li>
-                  in früher Jugend Malen und Zeichnen bei Richard Sander / Maler und Bildweber
-                  (siehe Wikibedia)
-                </li>
-                <li>
-                  später, erlernen und ausführen zahlreicher textiler Techniken, wie z.B. Klöppeln,
-                  verschiedene Sticktechniken, Batik, Textildruck, Filzen
-                </li>
-                <li>
-                  seit 10 Jahren (etwa ab 2016 ) wieder intensive Beschäftigung mit dem Zeichnen und
-                  Malen
-                </li>
-                <li>
-                  Besuch von zahlreichen Kursen in der VHS Ludwigshafen und bei Armin Liebscher/VBK
-                  Mannheim
-                </li>
-                <li>
-                  es folgten autodidaktische Versuche in der botanischen Illustration, angeregt
-                  durch ein Buch von Billy Showell und ein Abo in der Onlineschule dieser
-                  wunderbaren Künstlerin zur Vertiefung der Kenntnisse und Fertigkeiten
-                </li>
-                <li>
-                  Besuch mehrere Wochenend-Workshops bei Katja Katholing-Bloss und Teilnahme an
-                  einem Skizzenbuch Projekt
-                </li>
-                <li>Online und Direktkurse in der VHS Mannheim bei Sofie Crossart</li>
-                <li>
-                  2026 erfolgreicher Abschluss des 2 ½ jährigen Distance Learning Diploma Course bei
-                  der SBA/England
-                </li>
-              </ul>
+              Durch autodidaktisches Studium, Kurse und den Austausch mit anderen Künstlerinnen
+              vertiefe ich kontinuierlich meine Kenntnisse und entwickle meine künstlerische
+              Ausdrucksweise weiter. 2026 schloss ich erfolgreich den zweieinhalbjährigen Distance
+              Learning Diploma Course der SBA ab.
             </p>
             <p>
-              <strong>Techniken:</strong> Aquarell, Graphit, Farbstifte
+              Seit 2023 bin ich Mitglied im Verein Botanische Kunst Deutschland. Meine Arbeit ist
+              geprägt von genauer Beobachtung, der Freude am Detail und dem Wunsch, die Schönheit
+              und Einzigartigkeit der Pflanzenwelt sichtbar zu machen.
             </p>
-            <p>
-              <strong>Themen / Motive</strong> vorrangig Pflanzenportraits, Einzelblüten und
-              Blätter, Kompositionen,
-            </p>
-            <p>
-              <strong>Anspruch:</strong> Genauigkeit in Farbe, Größe, Form, präzise Darstellung der
-              botanischen Merkmale
-            </p>
-            <p>
-              <strong>Mitgliedschaft:</strong> „Verein Botanische Kunst Deutschland“ seit 2023
-            </p>
-            <div>
-              <p className="mb-3">
-                <strong>Ausstellungen:</strong>
-              </p>
-              <ul className="list-disc list-inside space-y-2">
-                <li>
-                  2023 eine Arbeit in der Ausstellung „Natur wird Kunst" als Schülerin von Katja
-                  Katholing-Bloss, in Hof
-                </li>
-                <li>
-                  zwei Bilder in der Onlineausstellung des „Vereines für Botanische Kunst
-                  Deutschland“ im Herbst gleichen Jahres.
-                </li>
-                <li>
-                  2024 Bilder innerhalb der Gemeinschaftsausstellung des „Vereines für Botanische
-                  Kunst Deutschland“, mit dem Titel „Ein Klostergarten“, im Kloster Seeligenstadt
-                </li>
-                <li>2025 ein Werk in die Onlineausstellung „Gefährdete Arten“</li>
-                <li>
-                  2026 zwei Bilder in der Ausstellung „Orchids Orchids Orchids“ anlässlich der 24th
-                  World of Orchid Conference in Dresden.
-                </li>
-              </ul>
-            </div>
           </Prose>
         </Col>
       </Grid>

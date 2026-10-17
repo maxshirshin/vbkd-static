@@ -10,6 +10,7 @@ import SophieCrossart from '../../content/gallery/SophieCrossart'
 import InesKamper from '../../content/gallery/InesKamper'
 import MargittaBaum from '../../content/gallery/MargittaBaum'
 import BettinaBuecker from '../../content/gallery/BettinaBuecker'
+import KailinWeitkamper from '../../content/gallery/KailinWeitkamper'
 
 export interface Gallery {
   slug: string
@@ -22,11 +23,11 @@ export interface Gallery {
 // Register all members here
 export const galleries: Gallery[] = [
   {
-    slug: 'maxim-shirshin',
-    title: 'Maxim Shirshin',
-    description: 'Softwareentwickler und Künstler. Arbeitet mit Aquarellfarben und Farbstiften.',
-    coverImage: 'gallery/maxim-shirshin/image-1.jpg',
-    Component: MaximShirshin,
+    slug: 'audrey-reilly',
+    title: 'Audrey Reilly',
+    description: 'Vorstandsvorsitzende des VBKD. Natur und Botanische Kunst.',
+    coverImage: 'gallery/audrey-reilly/image-1.jpg',
+    Component: AudreyReilly,
   },
   {
     slug: 'sue-henon',
@@ -36,11 +37,11 @@ export const galleries: Gallery[] = [
     Component: SueHenon,
   },
   {
-    slug: 'audrey-reilly',
-    title: 'Audrey Reilly',
-    description: 'Vorstandsvorsitzende des VBKD. Natur und Botanische Kunst.',
-    coverImage: 'gallery/audrey-reilly/image-1.jpg',
-    Component: AudreyReilly,
+    slug: 'maxim-shirshin',
+    title: 'Maxim Shirshin',
+    description: 'Softwareentwickler und Künstler. Arbeitet mit Aquarellfarben und Farbstiften.',
+    coverImage: 'gallery/maxim-shirshin/image-1.jpg',
+    Component: MaximShirshin,
   },
   {
     slug: 'dr-sabine-loos',
@@ -83,5 +84,12 @@ export const galleries: Gallery[] = [
     Component: BettinaBuecker,
     coverImage: 'gallery/bettina-buecker/daucus-carota-preview.webp',
     description: 'Botanische Kunst von Bettina Bücker, VBKD Premium Mitglied',
+  },
+  {
+    slug: 'kailin-weitkamper',
+    title: 'Dr. Kailin Weitkämper',
+    Component: KailinWeitkamper,
+    coverImage: 'gallery/kailin-weitkamper/insular-woodiness-tenerife.jpg',
+    description: 'Botanische Kunst von Dr. Kailin Weitkämper, VBKD Premium Mitglied',
   },
 ]

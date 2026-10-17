@@ -1,21 +1,47 @@
 export default Page
 
 import { Tile } from '@/components/ui/Tile'
+import type { ReactNode } from 'react'
 
 type GridTile = {
   title: string
-  description: string
+  description: ReactNode
   images: string[]
   href?: string
   tileClassName: string
   animationDelay?: number
+  textBackgroundColor: string
 }
 
+// const welcomeTile: GridTile = {
+//   title: 'Willkommen bei VBKD',
+//   description:
+//     'Wir sind eine Gruppe von pflanzenbegeisterten Künstlern und Illustratoren. Wir möchten viele Menschen für die botanische Kunst begeistern und sie ermutigen sich uns anzuschließen. Professionelle und semiprofessionelle Künstler, Anfänger, Förderer und Naturinteressierte genießen die Vorteile einer Mitgliedschaft und unterstützen botanische Kunst in ganz Deutschland.',
+//   href: '/uber-uns',
+//   images: [
+//     'tile-backgrounds/gallery/audrey-reilly/image-1.jpg',
+//     'tile-backgrounds/gallery/bettina-buecker/daucus-carota-preview.webp',
+//     'tile-backgrounds/archive/White-and-pink-orchid.jpeg',
+//     'tile-backgrounds/archive/IMG_7931.jpeg',
+//     'tile-backgrounds/archive/YPettersSummer.jpeg',
+//   ],
+//   tileClassName: 'col-span-1 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2',
+//   animationDelay: 10000,
+// }
+
 const welcomeTile: GridTile = {
-  title: 'Willkommen bei VBKD',
-  description:
-    'Wir sind eine Gruppe von pflanzenbegeisterten Künstlern und Illustratoren. Wir möchten viele Menschen für die botanische Kunst begeistern und sie ermutigen sich uns anzuschließen. Professionelle und semiprofessionelle Künstler, Anfänger, Förderer und Naturinteressierte genießen die Vorteile einer Mitgliedschaft und unterstützen botanische Kunst in ganz Deutschland.',
-  href: '/uber-uns',
+  title: 'Was ist botanische Kunst?',
+  description: (
+    <>
+      <p>
+        Botanische Kunst ist der Schnittpunkt von Wissenschaft und Kunst. Sie ist die sorgfältige
+        und kunstvolle Darstellung von Pflanzen, Pilzen und Flechten auf der Grundlage direkter
+        Beobachtung und eines gründlichen Verständnisses ihrer Struktur...
+      </p>
+      <p className="text-right italic">Weiterlesen&nbsp;→</p>
+    </>
+  ),
+  href: '/was-ist-botanische-kunst',
   images: [
     'tile-backgrounds/gallery/audrey-reilly/image-1.jpg',
     'tile-backgrounds/gallery/bettina-buecker/daucus-carota-preview.webp',
@@ -24,7 +50,8 @@ const welcomeTile: GridTile = {
     'tile-backgrounds/archive/YPettersSummer.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2',
-  animationDelay: 10000,
+  animationDelay: 30000,
+  textBackgroundColor: '145 65% 12%',
 }
 
 const galerieTile: GridTile = {
@@ -38,7 +65,7 @@ const galerieTile: GridTile = {
     'tile-backgrounds/gallery/dr-sabine-loos/image-3.jpg',
     'tile-backgrounds/gallery/ines-kamper/image-2.jpg',
     'tile-backgrounds/gallery/katja-katholing-bloss/image-2.jpg',
-    'tile-backgrounds/gallery/maxim-shirshin/image-2.jpg',
+    'gallery/maxim-shirshin/tannenzapfen-aus-schwarzwald.png',
     'tile-backgrounds/gallery/sue-henon/image-2.jpg',
     'tile-backgrounds/archive/IMG_7966.jpeg',
     'tile-backgrounds/archive/YPettersTeasel.jpeg',
@@ -46,6 +73,7 @@ const galerieTile: GridTile = {
   ],
   tileClassName: 'col-span-1 md:col-start-3 md:row-span-2 lg:col-start-3 lg:row-span-2',
   animationDelay: 3000,
+  textBackgroundColor: '184 80% 12%',
 }
 
 const mitgliedschaftTile: GridTile = {
@@ -61,20 +89,8 @@ const mitgliedschaftTile: GridTile = {
   ],
   tileClassName:
     'col-span-1 md:row-start-3 md:row-span-2 lg:col-start-4 lg:row-start-1 lg:row-span-2',
-  animationDelay: 9000,
-}
-
-const journalTile: GridTile = {
-  title: 'Journal',
-  description: 'VBKD Journal Nr. 13, August 2026',
-  href: '/news',
-  images: [
-    'tile-backgrounds/news/journal-13.jpg',
-    'tile-backgrounds/archive/IMG_20231124_180527.jpeg',
-    'tile-backgrounds/archive/Herbstkranz.jpeg',
-  ],
-  tileClassName: 'col-span-1 md:col-start-2 md:row-start-3 lg:col-start-1 lg:row-start-3',
-  animationDelay: 6000,
+  animationDelay: 32000,
+  textBackgroundColor: '24 55% 13%',
 }
 
 const newsTile: GridTile = {
@@ -88,8 +104,9 @@ const newsTile: GridTile = {
     'tile-backgrounds/archive/GOSSIP_Maria-Euthum.jpeg',
     'tile-backgrounds/archive/IMG_20240123_120011.jpeg',
   ],
-  tileClassName: 'col-span-1 md:col-start-3 md:row-start-3 lg:col-start-2 lg:row-start-3',
-  animationDelay: 8200,
+  tileClassName: 'col-span-1 md:col-start-2 md:row-start-3 lg:col-start-1 lg:row-start-3',
+  animationDelay: 29000,
+  textBackgroundColor: '240 45% 14%',
 }
 
 const workshopsTile: GridTile = {
@@ -103,8 +120,9 @@ const workshopsTile: GridTile = {
     'tile-backgrounds/archive/20230722_163356.jpeg',
     'tile-backgrounds/archive/Hyazinthen.jpeg',
   ],
-  tileClassName: 'col-span-1 md:col-start-2 md:row-start-4 lg:col-start-3 lg:row-start-3',
-  animationDelay: 10000,
+  tileClassName: 'col-span-1 md:col-start-3 md:row-start-3 lg:col-start-2 lg:row-start-3',
+  animationDelay: 30000,
+  textBackgroundColor: '60 50% 12%',
 }
 
 const aboutTile: GridTile = {
@@ -118,8 +136,9 @@ const aboutTile: GridTile = {
     'tile-backgrounds/archive/20230722_174047.jpeg',
     'tile-backgrounds/archive/20230722_164041.jpeg',
   ],
-  tileClassName: 'col-span-1 md:col-start-3 md:row-start-4 lg:col-start-4 lg:row-start-3',
-  animationDelay: 6200,
+  tileClassName: 'col-span-1 md:col-start-2 md:row-start-4 lg:col-start-3 lg:row-start-3',
+  animationDelay: 33000,
+  textBackgroundColor: '128 0% 10%',
 }
 
 const contactTile: GridTile = {
@@ -132,15 +151,15 @@ const contactTile: GridTile = {
     'tile-backgrounds/archive/IMG-20211015-WA0000.jpeg',
     'tile-backgrounds/archive/Kastanienzweige-im-Fruehjahr.jpeg',
   ],
-  tileClassName: 'col-span-1 md:col-span-2 md:row-start-5 lg:col-span-2 lg:row-start-4',
-  animationDelay: 6600,
+  tileClassName: 'col-span-1 md:row-start-4 lg:row-start-3',
+  animationDelay: 32000,
+  textBackgroundColor: '90 80% 13%',
 }
 
 const tilesToRender: GridTile[] = [
   welcomeTile,
   galerieTile,
   mitgliedschaftTile,
-  journalTile,
   newsTile,
   workshopsTile,
   aboutTile,
@@ -159,6 +178,7 @@ function Page() {
               href={tile.href}
               images={tile.images}
               animationDelay={tile.animationDelay ?? 6000}
+              textBackgroundColor={tile.textBackgroundColor}
               className="h-full min-h-[220px]"
             />
           </div>
