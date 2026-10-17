@@ -9,6 +9,7 @@ export default function KailinWeitkamper() {
         <Col>
           <GalleryLightboxItem
             localPreview="gallery/kailin-weitkamper/insular-woodiness-tenerife.jpg"
+            localFull="gallery/kailin-weitkamper/insular-woodiness-tenerife-full.jpg"
             alt="Insular Woodiness, Tenerife"
             title="Insular Woodiness, Tenerife"
             width={4968}
@@ -17,6 +18,36 @@ export default function KailinWeitkamper() {
 
           <Prose className="text-sm md:text-sm">
             <p>Insular Woodiness, Tenerife</p>
+          </Prose>
+        </Col>
+
+        <Col>
+          <GalleryLightboxItem
+            localPreview="gallery/kailin-weitkamper/compositae.jpg"
+            localFull="gallery/kailin-weitkamper/compositae-full.jpg"
+            alt="Compositae"
+            title="Compositae"
+            width={9921}
+            height={14031}
+          />
+
+          <Prose className="text-sm md:text-sm">
+            <p>Compositae</p>
+          </Prose>
+        </Col>
+
+        <Col>
+          <GalleryLightboxItem
+            localPreview="gallery/kailin-weitkamper/coniferae.jpg"
+            localFull="gallery/kailin-weitkamper/coniferae-full.jpg"
+            alt="Coniferae"
+            title="Coniferae"
+            width={6314}
+            height={4464}
+          />
+
+          <Prose className="text-sm md:text-sm">
+            <p>Coniferae</p>
           </Prose>
         </Col>
       </Grid>
