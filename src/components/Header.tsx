@@ -5,10 +5,11 @@ import { CDNImage } from '@/components/ui/CDNImage'
 const navigation = [
   { label: 'Galerie', href: '/mitglieder' },
   { label: 'News', href: '/news' },
-  { label: 'Workshops & Shows', href: '/workshops-and-shows' },
+  { label: 'Workshops', href: '/workshops-and-shows' },
   { label: 'Über uns', href: '/uber-uns' },
   { label: 'Mitgliedschaft', href: '/mitgliedschaft' },
   { label: 'Kontakt', href: '/kontakt' },
+  { label: 'Für Mitglieder', href: 'https://mitgliederbereich.vereinbotanischekunst.de/membership-login/' },
 ]
 
 export function Header() {

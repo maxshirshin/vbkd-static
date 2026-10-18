@@ -27,8 +27,15 @@ export function Tile({
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   const [isHovered, setIsHovered] = useState(false)
   const [isFadingOut, setIsFadingOut] = useState(false)
+  const isAnimationEnabled = animationDelay >= 0
 
   useEffect(() => {
+    if (!isAnimationEnabled) {
+      setActiveIndex(Math.floor(Math.random() * imageSet.length))
+      setIsFadingOut(false)
+      return
+    }
+
     const timeoutId = window.setTimeout(() => {
       setActiveIndex(Math.floor(Math.random() * imageSet.length))
     }, 0)
@@ -36,10 +43,16 @@ export function Tile({
     return () => {
       window.clearTimeout(timeoutId)
     }
-  }, [imageSet.length])
+  }, [imageSet.length, isAnimationEnabled])
 
   useEffect(() => {
-    if (activeIndex === null || isHovered || imageSet.length <= 1 || isFadingOut) {
+    if (
+      !isAnimationEnabled ||
+      activeIndex === null ||
+      isHovered ||
+      imageSet.length <= 1 ||
+      isFadingOut
+    ) {
       return
     }
 
@@ -50,10 +63,10 @@ export function Tile({
     return () => {
       window.clearTimeout(timeoutId)
     }
-  }, [activeIndex, animationDelay, imageSet.length, isFadingOut, isHovered])
+  }, [activeIndex, animationDelay, imageSet.length, isAnimationEnabled, isFadingOut, isHovered])
 
   useEffect(() => {
-    if (activeIndex === null || !isFadingOut) {
+    if (!isAnimationEnabled || activeIndex === null || !isFadingOut) {
       return
     }
 
@@ -68,7 +81,7 @@ export function Tile({
     return () => {
       window.clearTimeout(timeoutId)
     }
-  }, [activeIndex, imageSet.length, isFadingOut])
+  }, [activeIndex, imageSet.length, isAnimationEnabled, isFadingOut])
 
   const activeImage = activeIndex === null ? null : imageSet[activeIndex]
   const titleBackgroundColor = `hsl(${textBackgroundColor} / ${isHovered ? 0.7 : 0.45})`

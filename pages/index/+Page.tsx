@@ -29,6 +29,8 @@ type GridTile = {
 //   animationDelay: 10000,
 // }
 
+const sharedTileBackgroundColor = '145 65% 12%'
+
 const welcomeTile: GridTile = {
   title: 'Was ist botanische Kunst?',
   description: (
@@ -50,8 +52,8 @@ const welcomeTile: GridTile = {
     'tile-backgrounds/archive/YPettersSummer.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2',
-  animationDelay: 30000,
-  textBackgroundColor: '145 65% 12%',
+  animationDelay: -1,
+  textBackgroundColor: sharedTileBackgroundColor,
 }
 
 const galerieTile: GridTile = {
@@ -72,8 +74,8 @@ const galerieTile: GridTile = {
     'tile-backgrounds/archive/IMG_20240123_115800_711.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-3 md:row-span-2 lg:col-start-3 lg:row-span-2',
-  animationDelay: 3000,
-  textBackgroundColor: '184 80% 12%',
+  animationDelay: 7000,
+  textBackgroundColor: sharedTileBackgroundColor,
 }
 
 const mitgliedschaftTile: GridTile = {
@@ -89,8 +91,8 @@ const mitgliedschaftTile: GridTile = {
   ],
   tileClassName:
     'col-span-1 md:row-start-3 md:row-span-2 lg:col-start-4 lg:row-start-1 lg:row-span-2',
-  animationDelay: 32000,
-  textBackgroundColor: '24 55% 13%',
+  animationDelay: -1,
+  textBackgroundColor: sharedTileBackgroundColor,
 }
 
 const newsTile: GridTile = {
@@ -105,12 +107,12 @@ const newsTile: GridTile = {
     'tile-backgrounds/archive/IMG_20240123_120011.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-2 md:row-start-3 lg:col-start-1 lg:row-start-3',
-  animationDelay: 29000,
-  textBackgroundColor: '240 45% 14%',
+  animationDelay: -1,
+  textBackgroundColor: sharedTileBackgroundColor,
 }
 
 const workshopsTile: GridTile = {
-  title: 'Workshops & Shows',
+  title: 'Workshops',
   description: 'Erkunden Sie regionale Workshops und Ausstellungen für Künstler und Interessierte.',
   href: '/workshops-and-shows',
   images: [
@@ -121,8 +123,8 @@ const workshopsTile: GridTile = {
     'tile-backgrounds/archive/Hyazinthen.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-3 md:row-start-3 lg:col-start-2 lg:row-start-3',
-  animationDelay: 30000,
-  textBackgroundColor: '60 50% 12%',
+  animationDelay: -1,
+  textBackgroundColor: sharedTileBackgroundColor,
 }
 
 const aboutTile: GridTile = {
@@ -137,8 +139,8 @@ const aboutTile: GridTile = {
     'tile-backgrounds/archive/20230722_164041.jpeg',
   ],
   tileClassName: 'col-span-1 md:col-start-2 md:row-start-4 lg:col-start-3 lg:row-start-3',
-  animationDelay: 33000,
-  textBackgroundColor: '128 0% 10%',
+  animationDelay: -1,
+  textBackgroundColor: sharedTileBackgroundColor,
 }
 
 const contactTile: GridTile = {
@@ -152,8 +154,8 @@ const contactTile: GridTile = {
     'tile-backgrounds/archive/Kastanienzweige-im-Fruehjahr.jpeg',
   ],
   tileClassName: 'col-span-1 md:row-start-4 lg:row-start-3',
-  animationDelay: 32000,
-  textBackgroundColor: '90 80% 13%',
+  animationDelay: -1,
+  textBackgroundColor: sharedTileBackgroundColor,
 }
 
 const tilesToRender: GridTile[] = [
