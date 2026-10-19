@@ -9,7 +9,7 @@ const navigation = [
   { label: 'Über uns', href: '/uber-uns' },
   { label: 'Mitgliedschaft', href: '/mitgliedschaft' },
   { label: 'Kontakt', href: '/kontakt' },
-  { label: 'Für Mitglieder', href: 'https://mitgliederbereich.vereinbotanischekunst.de/membership-login/' },
+  { label: 'Für Mitglieder', href: 'https://mitgliederbereich.vereinbotanischekunst.de/' },
 ]
 
 export function Header() {
