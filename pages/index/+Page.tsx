@@ -13,22 +13,6 @@ type GridTile = {
   textBackgroundColor: string
 }
 
-// const welcomeTile: GridTile = {
-//   title: 'Willkommen bei VBKD',
-//   description:
-//     'Wir sind eine Gruppe von pflanzenbegeisterten Künstlern und Illustratoren. Wir möchten viele Menschen für die botanische Kunst begeistern und sie ermutigen sich uns anzuschließen. Professionelle und semiprofessionelle Künstler, Anfänger, Förderer und Naturinteressierte genießen die Vorteile einer Mitgliedschaft und unterstützen botanische Kunst in ganz Deutschland.',
-//   href: '/uber-uns',
-//   images: [
-//     'tile-backgrounds/gallery/audrey-reilly/image-1.jpg',
-//     'tile-backgrounds/gallery/bettina-buecker/daucus-carota-preview.webp',
-//     'tile-backgrounds/archive/White-and-pink-orchid.jpeg',
-//     'tile-backgrounds/archive/IMG_7931.jpeg',
-//     'tile-backgrounds/archive/YPettersSummer.jpeg',
-//   ],
-//   tileClassName: 'col-span-1 md:col-span-2 md:row-span-2 lg:col-span-2 lg:row-span-2',
-//   animationDelay: 10000,
-// }
-
 const sharedTileBackgroundColor = '145 65% 12%'
 
 const welcomeTile: GridTile = {

@@ -100,7 +100,7 @@ export function Tile({
 
   const tileBody = (
     <div
-      className={`group relative block h-full min-h-[280px] w-full overflow-hidden border border-white/10 bg-[#f2eee8] shadow-[0_22px_44px_rgba(14,22,19,0.18)] ${className}`}
+      className={`group relative flex flex-col justify-between h-full min-h-[280px] w-full overflow-hidden border border-white/10 bg-[#f2eee8] shadow-[0_22px_44px_rgba(14,22,19,0.18)] ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -119,10 +119,8 @@ export function Tile({
         />
       )}
 
-      <span className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/12 to-transparent" />
-
       <span
-        className="absolute left-0 top-6 z-10 inline-flex max-w-[75%] rounded-tr-md rounded-br-md px-3 py-2 backdrop-blur-[2px] transition-all duration-300"
+        className="mt-6 z-10 inline-flex max-w-[75%] rounded-tr-md rounded-br-md px-3 py-2 backdrop-blur-[2px] transition-all duration-300"
         style={{ backgroundColor: titleBackgroundColor }}
       >
         <span className="font-heading text-xl leading-none text-white sm:text-2xl md:text-[2rem]">
@@ -130,7 +128,7 @@ export function Tile({
         </span>
       </span>
 
-      <span className="absolute inset-x-0 bottom-0 z-10">
+      <span className="mt-36 z-10">
         <span
           className="block max-w-[100%] px-3 py-2 text-left backdrop-blur-[2px] transition-all duration-300"
           style={{ backgroundColor: descriptionBackgroundColor }}
@@ -148,7 +146,7 @@ export function Tile({
   return (
     <a
       href={href}
-      className="block h-full w-full no-underline hover:no-underline focus:outline-none"
+      className="block h-full w-full no-underline! hover:no-underline! focus:outline-none"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
