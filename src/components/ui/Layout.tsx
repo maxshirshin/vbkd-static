@@ -71,7 +71,7 @@ export function Grid({
     ? 'w-full mx-auto px-6 pt-2 pb-4 max-w-[var(--container-max)]'
     : ''
   return (
-    <div className={`${containerClass} grid ${colsClasses[cols]} gap-x-8 gap-y-16 ${className}`}>
+    <div className={`${containerClass} grid ${colsClasses[cols]} gap-x-8 gap-y-8 ${className}`}>
       {children}
     </div>
   )
