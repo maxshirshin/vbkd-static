@@ -3,10 +3,17 @@ import '@/styles/global.css'
 export { RootLayout as Layout }
 
 import { type ReactNode } from 'react'
+import { usePageContext } from 'vike-react/usePageContext'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 function RootLayout({ children }: { children: ReactNode }) {
+  const { urlPathname } = usePageContext()
+
+  if (urlPathname.startsWith('/design-vorschau')) {
+    return <>{children}</>
+  }
+
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
